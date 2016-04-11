@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    error_reporting(E_ALL & ~E_NOTICE);
+?>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -49,6 +52,10 @@
 <link href="<?php echo base_url(); ?>assets/_include/css/supersized.css" rel="stylesheet">
 <link href="<?php echo base_url(); ?>assets/_include/css/supersized.shutter.css" rel="stylesheet">
 
+<!-- Jasny.bootstrap -->
+<link href="<?php echo base_url(); ?>assets/_include/css/jasny-bootstrap.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/jasny-bootstrap.min.css" rel="stylesheet">
+
 <!-- Google Font -->
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
@@ -61,9 +68,24 @@
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
 <!-- Modernizr -->
-<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="_include/js/modernizr.js"></script>
+<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="<?php echo base_url(); ?>assets/_include/js/modernizr.js"></script>
 <!--<script src="_include/js/modal.js"></script>-->
 
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
 
 </head>
 
@@ -152,7 +174,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="_include/img/work/full/image-1-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -168,7 +190,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="_include/img/work/full/image-2-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -184,7 +206,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="_include/img/work/full/image-3-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -200,7 +222,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="_include/img/work/full/image-4-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -216,7 +238,7 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="_include/img/work/full/image-5-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
@@ -393,7 +415,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="DashboardUser.php">OK</a>
+        <a type="button" class="btn btn-default" href="<?php echo base_url(); ?>dashboard/user">OK</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>

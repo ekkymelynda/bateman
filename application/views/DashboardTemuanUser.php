@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    error_reporting(E_ALL & ~E_NOTICE);
+?>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -22,32 +25,36 @@
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
 <!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/main.css" rel="stylesheet">
 <!--<link href="_include/css/modal.css" rel="stylesheet">-->
 
 <!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/supersized.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/supersized.shutter.css" rel="stylesheet">
 
 <!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
 
 <!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/fonts.css" rel="stylesheet">
 
 <!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/shortcodes.css" rel="stylesheet">
 
 <!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/responsive.css" rel="stylesheet">
 
 <!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/supersized.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Jasny.bootstrap -->
+<link href="<?php echo base_url(); ?>assets/_include/css/jasny-bootstrap.css" rel="stylesheet">
+<link href="<?php echo base_url(); ?>assets/_include/css/jasny-bootstrap.min.css" rel="stylesheet">
 
 <!-- Google Font -->
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
@@ -61,7 +68,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
 <!-- Modernizr -->
-<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="_include/js/modernizr.js"></script>
+<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="<?php echo base_url(); ?>assets/_include/js/modernizr.js"></script>
 <!--<script src="_include/js/modal.js"></script>-->
 
 <!-- Analytics -->

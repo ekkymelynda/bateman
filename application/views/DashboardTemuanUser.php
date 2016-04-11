@@ -128,7 +128,7 @@
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah</a></li>
-                <li><a href="DashboardTemuanUser.php" class="external" >Temuan Anda</a></li>
+                <li><a href="index.php/dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
                 <li><a href="index.php" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
@@ -176,12 +176,12 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="_include/img/work/full/image-3-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="_include/img/work/thumbs/image-3.jpg" 
+                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
                                      alt="Lokasi ditemukan di Lab. NCC<br>
                                           Tanggal ditemukan 10/03/2015 10:30 WIB<br>
                                           Ditemukan oleh Putro Satrio<br>
@@ -193,12 +193,12 @@
 							<!-- Item Project and Filter Name -->
                         	<li class="item-thumbs span3">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="_include/img/work/full/image-5-full.jpg">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="_include/img/work/thumbs/image-5.jpg"
+                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-5.jpg"
                                      alt="Lokasi ditemukan di Lab. AJK<br>
                                           Tanggal ditemukan 07/03/2015 09:30 WIB<br>
                                           Ditemukan oleh Putro Satrio<br>
@@ -240,7 +240,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Project Manajer</span>
                 </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="John Doe">
             </div>
             <h3 class="profile-name">Divi Jaya</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
@@ -262,7 +262,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Web Designer</span>
                 </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Jane Helf">
             </div>
             <h3 class="profile-name">Putro Satrio</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
@@ -283,7 +283,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Web Designer</span>
                 </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
             </div>
             <h3 class="profile-name">Ekky Melinda</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
@@ -305,7 +305,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Database Administrator</span>
                 </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
             </div>
             <h3 class="profile-name">Ken Genesius</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
@@ -413,7 +413,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" href="DashboardUser.php">OK</button>
+        <button type="button" class="btn btn-default" href="#">OK</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>
@@ -474,16 +474,16 @@
     
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
+<script src="<?php echo base_url(); ?>assets/_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="<?php echo base_url(); ?>assets/_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="<?php echo base_url(); ?>assets/_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="<?php echo base_url(); ?>assets/_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
 
 </body>

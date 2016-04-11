@@ -415,7 +415,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="<?php echo base_url(); ?>dashboard/user">OK</a>
+        <a type="button" class="btn btn-default" href="<?php echo base_url(); ?>index.php/dashboard/user">OK</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>

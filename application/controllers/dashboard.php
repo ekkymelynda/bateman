@@ -8,7 +8,7 @@ class dashboard extends CI_Controller {
         //$this->load->helper('form','url');
         $this->load->helper(array('url','form'));
     }
-    
+
     public function index()
 	{
 
@@ -18,6 +18,11 @@ class dashboard extends CI_Controller {
     public function user()
     {
     	$this->load->view('DashboardUser.php');
+    }
+
+    public function temuan()
+    {
+    	$this->load->view('DashboardTemuanUser.php');
     }
 
 }

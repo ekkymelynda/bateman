@@ -349,7 +349,7 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Database Administrator</span>
                 </div>
-                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-04.jpg" alt="Joshua Insanus">
             </div>
             <h3 class="profile-name">Ken Genesius</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 

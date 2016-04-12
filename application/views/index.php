@@ -269,7 +269,7 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Tentang Kami</h2>
-                <h3 class="title-description">Developer dari Bateman</h3>
+                <h3 class="title-description">Developer Bateman</h3>
             </div>
         </div>
     </div>
@@ -284,11 +284,12 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Project Manajer</span>
                 </div>
-                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="John Doe">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="Divi Jaya">
             </div>
             <h3 class="profile-name">Divi Jaya</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p class="profile-description">Saya merasa sedih melihat keadaan tempat penampungan barang temuan yang ada di Laboratorium Teknik Informatika ITS. 
+			Terakhir saya lihat tempatnya hanya sebuah kotak kardus atau toples bekas yang tidak terawat. Akhirnya saya dan teman-teman memiliki ide untuk membuat sebuah aplikasi berbasis web 
+			yang khusus untuk menampung informasi mengenai barang temuan tersebut. Dari ide itulah lahir Bateman.</p>
             	
 <!--            <div class="social">
             	<ul class="social-icons">
@@ -306,11 +307,12 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Web Designer</span>
                 </div>
-                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Jane Helf">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Putro Satrio">
             </div>
             <h3 class="profile-name">Putro Satrio</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p class="profile-description">Dulu saya pernah lupa membawa pulang harddisk external yang saya miliki. Pdahal banyak file-file penting yang ada di dalamnya.
+			Suatu ketika saya coba menanyakan barang saya kepada Administrator Lab dan mencoba mencari barang milik saya, namun barang saya tidak ada dimanapun. Beruntung suatu 
+			ketika teman saya mengabarkan bahwa barang milik saya tersebut dibawa olehnya. Oleh karena itu, saat teman saya mengajak mengerjakan proyek Bateman, saya menyetujuinya tanpa keraguan sedikitpun.</p>
             	
   <!--          <div class="social">
             	<ul class="social-icons">
@@ -327,11 +329,11 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Web Designer</span>
                 </div>
-                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Ekky Melinda">
             </div>
             <h3 class="profile-name">Ekky Melinda</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p class="profile-description">Kata Bateman lahir dari ide yang dicetuskan PM kami saat menyaksikan Film Superhero Batman. Bateman adalah singkatan dari Barang Temuan 
+			dengan logo yang merupakan representasi Batman itu sendiri. Kami berharap Bateman dapat menjadi Superhero yang mampu menghubungkan Anda dengan barang milik Anda.</p>
             	
 <!--            <div class="social">
             	<ul class="social-icons">
@@ -349,11 +351,11 @@
                     <span class="overlay-img"></span>
                     <span class="overlay-text-thumb">Database Administrator</span>
                 </div>
-                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-04.jpg" alt="Joshua Insanus">
+                <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-04.jpg" alt="Ken Genesius">
             </div>
             <h3 class="profile-name">Ken Genesius</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p class="profile-description">Superhero sejati tidak selalu lahir dengan kemampuan super atau semacamnya. Superhero sejati juga bisa lahir 
+			dari tangan-tangan kecil kami. Seperti Bateman, yang lahir dengan cara sederhana, namun mampu memberikan manfaat yang cukup istimewa. Terima kasih Bateman!</p>
             	
 <!--            <div class="social">
             	<ul class="social-icons">

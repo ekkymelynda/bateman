@@ -126,9 +126,9 @@
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah</a></li>
-                <li><a href="<?php echo base_url(); ?>index.php/dashboard/temuan" class="external" >Temuan Anda</a></li>
+                <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
-                <li><a href="index.php" class="external" >Keluar</a></li>
+                <li><a href="<?php echo base_url(); ?>dashboard/index" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
         </nav>
@@ -421,7 +421,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" href="index.php/dashboard/user">OK</button>
+        <button type="button" class="btn btn-default" href="dashboard/user">OK</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>

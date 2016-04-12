@@ -128,9 +128,9 @@
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah</a></li>
-                <li><a href="index.php/dashboard/temuan" class="external" >Temuan Anda</a></li>
+                <li><a href="dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
-                <li><a href="index.php" class="external" >Keluar</a></li>
+                <li><a href="<?php echo base_url(); ?>dashboard/index" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
         </nav>

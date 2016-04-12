@@ -94,7 +94,7 @@
 <!-- End of Splash Screen -->
     
 <!-- Homepage Slider -->
-<div id="home-slider">	
+<div id="home-slider" style="height: 30%">	
     <div class="overlay"></div>
 
     <div class="slider-text">

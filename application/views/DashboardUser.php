@@ -156,26 +156,25 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-<!--                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li> -->
+                    	<li class="type-work">Type of Work</li>
+                        <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
+                        <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
+                        <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
             </div>
             
-            <div class="span12">
+            <div class="span9">
             	<div class="row">
-                    <section id="projects">
-                        <ul id="thumbs">
+                	<section id="projects">
+                    	<ul id="thumbs">
                         
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 image-wrap">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
-                                    <span class="overlay-img"></span>
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 image-wrap electronics">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                     <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Charger Laptop Asus X450-JN</span>
                                 </a>
@@ -186,14 +185,13 @@
                                           Ditemukan oleh Batman<br>
                                           Kontak 085745557887">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 image-wrap">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
-                                    <span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 image-wrap electronics">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Smartphone Asus Zenfone 5</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
@@ -203,15 +201,14 @@
                                           Ditemukan oleh Divi Jaya<br>
                                           Kontak 085745557887">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 image-wrap">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
-                                    <span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci Motor Honda</span>
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 image-wrap keys">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci motor Honda</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
@@ -220,14 +217,13 @@
                                           Ditemukan oleh Putro Satrio<br>
                                           Kontak 085745557887">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 image-wrap">
-                                <!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
-                                    <span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 image-wrap electronics">
+                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Hard Disk Eksternal Seagate</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
@@ -237,14 +233,13 @@
                                           Ditemukan oleh Ken Genesius<br>
                                           Kontak 085745557887">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                             
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 image-wrap">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
-                                    <span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 image-wrap electronics">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
+                                	<span class="overlay-img"></span>
                                     <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Flash Disk HP</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
@@ -254,7 +249,7 @@
                                           Ditemukan oleh Putro Satrio<br>
                                           Kontak 085745557887">
                             </li>
-                            <!-- End Item Project -->
+                        	<!-- End Item Project -->
                         </ul>
                     </section>
                     

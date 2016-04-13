@@ -203,10 +203,14 @@ h4,
 h5,
 h6{
 	margin:0 0 20px 0;
-	color:#FFFFFF;
+	color:#26292E;
 	font-weight:300;
 	font-family: 'Titillium Web', sans-serif;
 	line-height:1.5em;
+}
+
+#thumbs h1, h2, h3, h4, h5, h6{
+    color: #FFFFFF;
 }
 
 h1{

@@ -172,11 +172,12 @@
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3">
+                        	<li class="item-thumbs span3 image-wrap">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Charger Laptop Asus X450-JN</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-1.jpg" 
@@ -188,11 +189,11 @@
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3">
+                        	<li class="item-thumbs span3 image-wrap">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Smartphone Asus Zenfone 5</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-2.jpg" 
@@ -204,11 +205,11 @@
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3">
+                        	<li class="item-thumbs span3 image-wrap">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci motor Honda</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
@@ -220,11 +221,11 @@
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3">
+                        	<li class="item-thumbs span3 image-wrap">
                             	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Hard Disk Eksternal Seagate</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-4.jpg" 
@@ -236,11 +237,11 @@
                         	<!-- End Item Project -->
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3">
+                        	<li class="item-thumbs span3 image-wrap">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
                             	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
                                 	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Flash Disk HP</span>
                                 </a>
                                 <!-- Thumb Image and Description -->
                                 <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-5.jpg"

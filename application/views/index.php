@@ -397,23 +397,13 @@
         </ul>
       </div>
       <div class="modal-body">
-                    <div class="tab-content" style="background-color: white">
-                        <div class="tab-pane fade in active" id="tab1">
-                            <form>
-                              Username:<br>
-                              <input type="text" name=""><br>
-                              Password:<br>
-                              <input type="text" name="">
-                            </form>  
-                        </div>
-        <!--                <div class="tab-pane fade in" id="tab2">
-                            <form>
-                              Username:<br>
-                              <input type="text" name="username_guru"><br>
-                              Password:<br>
-                              <input type="text" name="password_guru">
-                            </form>
-                        </div>-->
+                    <div class="tab-pane fade in active" id="tab1">
+                        <form action="<?php echo base_url(); ?>dashboard/checkLoginStudents" method="POST" enctype="multipart/form-data">
+                            Username:<br>
+                                <input type="text" name="username_murid" placeholder="Username"><br>
+                            Password:<br>
+                                <input type="password" name="password_murid" placeholder="Password">
+                        </form>  
                     </div>
       </div>
       <div class="modal-footer">
@@ -428,51 +418,61 @@
 
 <!-- Modal -->
 <div id="register" class="modal hide fade" role="dialog">
-  <div class="modal-dialog">
+    <div class="modal-dialog">
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <ul class="nav nav-tabs" id="myTab">
-            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >REGISTER</a></li>
-            <!--<li style="float: left; display: inline; text-align : center; width : 49%;"><a href="#tab2" data-toggle="tab" >LOGIN GURU</a></li>-->
-        </ul>
-      </div>
-      <div class="modal-body">
-                    <div class="tab-content" style="background-color: white">
-                        <div class="tab-pane fade in active" id="tab1">
-                            <form>
-                              Nama:<br>
-                              <input type="text" name=""><br>
-                              NRP:<br>
-                              <input type="text" name=""><br>
-                              No HP:<br>
-                              <input type="text" name=""><br>
-                              Email:<br>
-                              <input type="text" name=""><br>
-                              Password:<br>
-                              <input type="text" name=""><br>
-                              Foto:<br>
-                              <input type="file" name=""><br>
-                            </form>  
-                        </div>
-        <!--                <div class="tab-pane fade in" id="tab2">
-                            <form>
-                              Username:<br>
-                              <input type="text" name="username_guru"><br>
-                              Password:<br>
-                              <input type="text" name="password_guru">
-                            </form>
-                        </div>-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >REGISTER</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content" style="background-color: white">
+                    <div class="tab-pane fade in active" id="tab1">
+                        <form action="<?php echo base_url(); ?>" method="POST" enctype="multipart/form-data">
+                            <div style="float: left; width: 50%;">
+                                Nama:<br>
+                                    <input type="text" name="nama" placeholder="Nama Lengkap"><br>
+                            </div>
+                            <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="float: right; width: 40%;">
+                              <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 175px; height: 200px;"></div>
+                              <div>
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select Profile Picture</span><span class="fileinput-exists">Change</span><input type="file" name="image"></span>
+                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                              </div>
+                            </div>
+                            <div style="float: left; width: 50%;">
+                                NRP:<br>
+                                    <input type="text" name="nrp" placeholder="NRP"><br>
+                            </div>
+                            <div style="float: left; width: 50%;">
+                                Email:<br>
+                                    <input type="text" name="email" placeholder="Email"><br>
+                            </div>                          
+                            <div style="float: left; width: 50%;">
+                                Password:<br>
+                                    <input type="password" name="password" placeholder="Password"><br>
+                            </div>
+                            <div style="float: left; width: 100%;">
+                                Konfirmasi Password:<br>
+                                    <input type="password" name="confirm_password" placeholder="Konfirmasi Password"><br>
+                            </div>
+                     <!--       <div class="form-group">
+                              <button class="btn btn-primary btn btn-block">OK</button>
+                            </div> -->
+                        </form>  
                     </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-      </div>
-    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-default">OK</a>
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
 
-  </div>
+    </div>
 </div>
 <!-- Modal -->
     
@@ -486,6 +486,8 @@
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.min.js"></script> <!-- photo -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.js"></script> <!-- photo -->
 <script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->

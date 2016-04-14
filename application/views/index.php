@@ -156,7 +156,7 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
+                    	<li class="type-work">Kategori</li>
                         <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
                         <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
                         <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li>
@@ -398,7 +398,7 @@
       </div>
       <div class="modal-body">
                     <div class="tab-pane fade in active" id="tab1">
-                        <form action="<?php echo base_url(); ?>dashboard/checkLoginStudents" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo base_url(); ?>" name="loginuser" id="loginuser" method="POST" enctype="multipart/form-data">
                             Username:<br>
                                 <input type="text" name="username_murid" placeholder="Username"><br>
                             Password:<br>
@@ -408,6 +408,7 @@
       </div>
       <div class="modal-footer">
         <a type="button" class="btn btn-default" href="<?php echo base_url(); ?>dashboard/user">OK</a>
+        <!--<button type="submit" class="btn btn-default" form="loginuser" value="submitForm">OK</button>-->
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>

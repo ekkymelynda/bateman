@@ -104,9 +104,9 @@
     </div>   
 	
 	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
+        <a id="prevslide" class="load-item" style="opacity: 1"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item" ><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list" style="margin-left: -42px;"></ul>
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
@@ -398,16 +398,16 @@
       </div>
       <div class="modal-body">
                     <div class="tab-pane fade in active" id="tab1">
-                        <form action="<?php echo base_url(); ?>" name="loginuser" id="loginuser" method="POST" enctype="multipart/form-data">
-                            Username:<br>
-                                <input type="text" name="username_murid" placeholder="Username"><br>
+                        <form action="<?php echo base_url(); ?>dashboard/checkLoginUser" name="loginuser" id="loginuser" method="POST" enctype="multipart/form-data">
+                            email:<br>
+                                <input type="text" name="email" placeholder="email"><br>
                             Password:<br>
-                                <input type="password" name="password_murid" placeholder="Password">
+                                <input type="password" name="password" placeholder="Password">
                         </form>  
                     </div>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="<?php echo base_url(); ?>dashboard/user">OK</a>
+        <button id="muridForm" type="submit" class="btn btn-default" form="loginuser" value="submitForm">OK</button>
         <!--<button type="submit" class="btn btn-default" form="loginuser" value="submitForm">OK</button>-->
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
@@ -431,10 +431,10 @@
             <div class="modal-body">
                 <div class="tab-content" style="background-color: white">
                     <div class="tab-pane fade in active" id="tab1">
-                        <form action="<?php echo base_url(); ?>" method="POST" enctype="multipart/form-data">
-                            <div style="float: left; width: 50%;">
+                        <form action="<?php echo base_url(); ?>dashboard/account" method="POST" name="registerForm" id="registerForm" enctype="multipart/form-data">
+                            <div style="float: left; width: 55%;">
                                 Nama:<br>
-                                    <input type="text" name="nama" placeholder="Nama Lengkap"><br>
+                                    <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" value="<?php echo set_value('nama'); ?>" required>&nbsp;&nbsp;&nbsp;&nbsp;<span id="nama_verify" class="verify" style="display:inline-block; width:16px; height:16px;"></span><br>
                             </div>
                             <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="float: right; width: 40%;">
                               <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 175px; height: 200px;"></div>
@@ -443,19 +443,15 @@
                                 <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                               </div>
                             </div>
-                            <div style="float: left; width: 50%;">
-                                NRP:<br>
-                                    <input type="text" name="nrp" placeholder="NRP"><br>
-                            </div>
-                            <div style="float: left; width: 50%;">
+                            <div style="float: left; width: 55%;">
                                 Email:<br>
-                                    <input type="text" name="email" placeholder="Email"><br>
-                            </div>                          
-                            <div style="float: left; width: 50%;">
+                                    <input type="text" name="email" id="email" placeholder="Email" value="<?php echo set_value('email'); ?>" required>&nbsp;&nbsp;&nbsp;&nbsp;<span id="email_verify" class="verify" style="display:inline-block; width:16px; height:16px;"></span><br>
+                            </div>                           
+                            <div style="float: left; width: 55%;">
                                 Password:<br>
-                                    <input type="password" name="password" placeholder="Password"><br>
+                                    <input type="password" name="password" id="password" placeholder="Password" value="<?php echo set_value('password'); ?>" required>&nbsp;&nbsp;&nbsp;&nbsp;<span id="password_verify" class="verify" style="display:inline-block; width:16px; height:16px;"></span><br>
                             </div>
-                            <div style="float: left; width: 100%;">
+                            <div style="float: left; width: 55%;">
                                 Konfirmasi Password:<br>
                                     <input type="password" name="confirm_password" placeholder="Konfirmasi Password"><br>
                             </div>
@@ -467,7 +463,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a type="button" class="btn btn-default">OK</a>
+                <button type="submit" class="btn btn-default" form="registerForm" value="submitForm">OK</button>
                 <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
             </div>
@@ -491,6 +487,91 @@
 <script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.js"></script> <!-- photo -->
 <script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#nama").blur(function(){
+        var nama = $("#nama").val();
+        
+        if($("#nama").val().length >=5)
+        {
+         
+            if(isValidFullname(nama))
+            {
+               $("#nama_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/yes.png')" });
+               email_con=true;
+               //register_show();
+            } else {
+               
+                $("#nama_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+            }
+ 
+        }
+        else {
+            $("#nama_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+        }
+    });    
+    
+    $("#email").blur(function(){
+        var email = $("#email").val();
+        
+        if(email != 0)
+        {
+         
+            if(isValidEmailAddress(email))
+            {
+               $("#email_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/yes.png')" });
+               email_con=true;
+               //register_show();
+            } else {
+               
+                $("#email_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+            }
+ 
+        }
+        else {
+            $("#email_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+        }
+
+    });
+    $("#password").blur(function(){
+        var password = $("#password").val();
+        
+        if($("#password").val().length >=6)
+        {
+         
+            if(isValidPassword(password))
+            {
+               $("#password_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/yes.png')" });
+               email_con=true;
+               //register_show();
+            } else {
+               
+                $("#password_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+            }
+ 
+        }
+        else {
+            $("#password_verify").css({ "background-image": "url('<?php echo base_url();?>assets/_include/img/no.png')" });
+        }
+
+    });
+});
+
+function isValidFullname(nama) {
+        var pattern = new RegExp(/^[a-zA-Z _-]{7,50}$/i);
+        return pattern.test(nama);
+    }
+function isValidPassword(password) {
+        var pattern = new RegExp(/^[a-z0-9_-]{6,32}$/i);
+        return pattern.test(password);
+    }
+function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        return pattern.test(emailAddress);
+    }
+</script>
+
 <!-- End Js -->
 
 </body>

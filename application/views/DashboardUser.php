@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+    error_reporting(E_ALL & ~E_NOTICE);
+    if($_SESSION['username']){
+        echo $_SESSION['username'];
+        echo $_SESSION['userid'];
+        echo $_SESSION['name'];
+    }
+    else{
+        //header("Location:../dashboard/index");
+        header("Location:../dashboard");
+    }
+?>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -84,7 +96,6 @@
 </script>
 <!-- End Analytics -->
 
-
 </head>
 
 
@@ -104,7 +115,7 @@
 	<div class="control-nav">
         <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
         <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
+        <ul id="slide-list" style="margin-left: -42px;"></ul>
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
@@ -128,7 +139,7 @@
                 <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
-                <li><a href="<?php echo base_url(); ?>dashboard/index" class="external" >Keluar</a></li>
+                <li><a href="<?php echo base_url(); ?>dashboard/logout" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
         </nav>

@@ -89,6 +89,16 @@
 
 </head>
 
+<?php
+if(validation_errors()!=NULL){
+    echo'
+    <div class="alert alert-info" style="color: white">
+        <button type="button" class="close" data-dismiss="alert">×</button>';
+            echo validation_errors();
+    echo '
+    </div>';
+}
+?>
 
 <body>
 
@@ -572,6 +582,11 @@ function isValidEmailAddress(emailAddress) {
     }
 </script>
 
+<script>
+$(document).ready(function(){
+    $(".alert").addClass("in").fadeOut(20000);
+});    
+</script>
 <!-- End Js -->
 
 </body>

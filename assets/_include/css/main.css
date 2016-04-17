@@ -1404,3 +1404,11 @@ footer .credits {
        -o-transition: none;
           transition: none;
 }
+
+.alert {
+    position: fixed;
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 50%;
+    z-index: 10000;
+}

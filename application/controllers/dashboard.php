@@ -24,6 +24,11 @@ class dashboard extends CI_Controller {
     	$this->load->view('DashboardTemuanUser.php');
     }
 
+    public function tambah()
+    {
+        $this->load->view('TambahBarang.php');
+    }
+
     public function checkLoginUser() {
         $this->form_validation->set_rules('email','Email','required|valid_email');
         $this->form_validation->set_rules('password','Password','required|callback_verifyUser');
@@ -32,7 +37,7 @@ class dashboard extends CI_Controller {
             redirect('dashboard');
         }
         else{
-            redirect('dashboard/user');
+            $this->user();
         }
     }
 
@@ -53,11 +58,15 @@ class dashboard extends CI_Controller {
     }
 
     public function account() {
-        $this->form_validation->set_rules('email','Email','required|valid_email');
-        $this->form_validation->set_rules('password','Password','required');
+        $this->load->helper('security');
+        $this->form_validation->set_rules('nama','Nama','trim|required');
+        $this->form_validation->set_rules('email','Email','trim|required|xss_clean|valid_email|callback_email_sudah_terpakai');
+        $this->form_validation->set_rules('password','Password','trim|required|min_length[6]|max_length[32]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]');
+        $this->form_validation->set_rules('confirm_password', 'Password Confirmation', 'trim|required|matches[password]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]');
         
         if($this->form_validation->run() == false){
             $this->form_validation->set_message('Incorrect Email.');
+            $this->index();
         }
         else{
             $nama = $this->input->post('nama');
@@ -94,6 +103,19 @@ class dashboard extends CI_Controller {
             }
         }
     }
+
+    public function email_sudah_terpakai(){
+        $this->load->model('dashboardModel');
+        $email=$this->input->post('email');
+        $result=$this->dashboardModel->check_email_exist($email);
+        if($result){
+            $this->form_validation->set_message('email_sudah_terpakai', 'Email already exist.');
+            return false;
+        }else{
+            return true;
+        }
+    }
+
     public function logout(){
         $this->load->library('session');
         $this->load->view('logout');

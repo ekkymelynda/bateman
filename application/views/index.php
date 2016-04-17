@@ -425,7 +425,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >REGISTER</a></li>
+                    <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >DAFTAR</a></li>
                 </ul>
             </div>
             <div class="modal-body">

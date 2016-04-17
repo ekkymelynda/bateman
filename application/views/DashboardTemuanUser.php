@@ -127,7 +127,7 @@
             	<li class="current"><a href="#home-slider">Home</a></li>
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah</a></li>
+                <li><a href="#filter" data-toggle="modal" data-target="#tambah-barang">Tambah Temuan</a></li>
                 <li><a href="dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/index" class="external" >Keluar</a></li>
@@ -386,7 +386,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <ul class="nav nav-tabs" id="myTab">
-            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >TAMBAH BARANG</a></li>
+            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >TAMBAH TEMUAN</a></li>
             <!--<li style="float: left; display: inline; text-align : center; width : 49%;"><a href="#tab2" data-toggle="tab" >LOGIN GURU</a></li>-->
         </ul>
       </div>

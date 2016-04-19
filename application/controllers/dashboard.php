@@ -30,11 +30,12 @@ class dashboard extends CI_Controller {
     }
 
     public function checkLoginUser() {
+        $this->load->helper('security');
         $this->form_validation->set_rules('email','Email','required|valid_email');
-        $this->form_validation->set_rules('password','Password','required|callback_verifyUser');
-        
+        $this->form_validation->set_rules('password','Password','trim|required|min_length[6]|max_length[32]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]|callback_verifyUser');
         if($this->form_validation->run() == false){
-            redirect('dashboard');
+            //redirect('dashboard');
+            $this->index();
         }
         else{
             $this->user();
@@ -57,6 +58,54 @@ class dashboard extends CI_Controller {
         }
     }
 
+    public function tambahBarang()
+    {
+        $this->form_validation->set_rules('nama_barang','Nama_Barang','required');
+        $this->form_validation->set_rules('jenis_barang','Jenis_Barang','required');
+        $this->form_validation->set_rules('lokasi_barang','Lokasi_Barang','required');
+        $this->form_validation->set_rules('deskripsi_barang','Deskripsi_Barang','required');
+        
+        if($this->form_validation->run() == false){
+            $this->form_validation->set_message('Incorrect Data.');
+            $this->tambah();
+        }
+        else {
+            $userid = $this->input->post('user_id');
+            $nama_barang = $this->input->post('nama_barang');
+            $jenis_barang = $this->input->post('jenis_barang');
+            $lokasi_barang = $this->input->post('lokasi_barang');
+            $tanggal = $this->input->post('tanggal');
+            $waktu = $this->input->post('waktu');
+            $deskripsi = $this->input->post('deskripsi_barang');
+        
+            if(isset($_FILES['image'])){
+                $file = $_FILES['image']['tmp_name'];
+                if(!isset($file)){
+                    echo "Please select an image.";
+                }
+                else{
+                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                    $image_name = addslashes($_FILES['image']['name']);
+                    $image_size = getimagesize($_FILES['image']['tmp_name']);
+
+                    $this->load->model('barangModel');
+                    $this->barangModel->insert($userid, $nama_barang, $jenis_barang, $lokasi_barang, $tanggal, $waktu, $deskripsi);
+                    $this->barangModel->upload_photo($image, $image_name);
+                
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                    
+                    
+                    $this->tambah();  
+                
+                }            
+            }  
+        
+        }
+    }    
+    
     public function account() {
         $this->load->helper('security');
         $this->form_validation->set_rules('nama','Nama','trim|required');

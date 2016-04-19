@@ -162,31 +162,77 @@
         <div class="row">
             <div class="span3">
                 <!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                        <li class="type-work">Nama</li>
-                <!--        <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
-                        <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
-                        <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li> -->
-                    </ul>
-                </nav>
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <li class="type-work">Nama</li>
+                            <li class="type-work">Jenis Barang</li>
+                            <li class="type-work">Lokasi Ditemukan</li>
+                            <li class="type-work">Tanggal</li>
+                            <li class="type-work">Deskripsi</li>
+                    <!--        <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
+                            <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
+                            <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li> -->
+                        </ul>
+                    </nav>
                 <!-- End Filter -->
             </div>
-            
-            <form class="form-inline">
-                <div class="form-group">
-                    <label style="font-size: 20px">Nama Barang</label>
-                    <input type="text">
-                </div>
-                Jenis Barang:<br>
-                <input type="text" name=""><br>
-                Lokasi Ditemukan:<br>
-                <input type="text" name=""><br>
-                Tanggal Ditemukan:<br>
-                <input type="text" name=""><br>
-                Foto Barang:<br>
-                <input type="file" name="">
-            </form>
+                
+            <div class="span5">
+                <!-- Filter -->
+                <form class="form-inline" action="<?php echo base_url(); ?>dashboard/tambahBarang" method="POST" name="barangForm" id="barangForm" enctype="multipart/form-data">
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                            <input type="hidden" name="user_id" value="<?php echo $_SESSION['userid']; ?>">
+                            <li class="type-work" style="margin-top: 0px; margin-bottom: 4%;"><input type="text" style="width: 97%; height: 80%;" name="nama_barang" placeholder="Nama Barang"></li>
+                            <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;">
+                                <select style="width: 97%; height: 80%;" name="jenis_barang">
+                                    <option value="">
+                                        -----
+                                    </option>
+                                    <option value="1">
+                                        Aksesoris
+                                    </option>
+                                    <option value="2">
+                                        Alat Tulis
+                                    </option>                                    
+                                    <option value="3">
+                                        Device
+                                    </option>
+                                    <option value="4">
+                                        Elektronik
+                                    </option>
+                                    <option value="5">
+                                        Pakaian
+                                    </option>
+                                    <option value="6">
+                                        Lain - lain
+                                    </option>
+                                </select>
+                            </li>
+                            <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;"><input type="text" style="width: 97%; height: 80%;" name="lokasi_barang" placeholder="Lokasi Barang"></li>
+                            <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;"><input type="date" style="width: 50%; height: 80%;" name="tanggal">&nbsp;&nbsp;&nbsp;Waktu&nbsp;&nbsp;&nbsp;<input type="time" style="width: 21%; height: 80%;" name="waktu"></li>
+                            <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;"><textarea type="text" rows="5" style="width: 97%; height: 80%; " name="deskripsi_barang" placeholder="Deskripsi mengenai barang temuan ...."></textarea></li>
+                        </ul>
+                    </nav>
+                </form>
+                <!-- End Filter -->
+            </div>
+            <div class="span4">
+                <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="width: 100%;">
+                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 300px;"></div>
+                        <div>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang Temuan</span><span class="fileinput-exists">Change</span><input type="file" name="image"></span>
+                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="span3"></div>
+            <div>
+                <button type="submit" class="btn btn-default" form="barangForm" value="submitForm">OK</button>
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
+                <button type="button" class="btn btn-default">Cancel</button>            
+            </div>
+                
         </div>
         <!-- End Portfolio Projects -->
     </div>
@@ -205,20 +251,6 @@
 </a>
 <!-- End Back to Top -->
 
- 
-       <!--                     <form>
-                              Nama Barang:<br>
-                              <input type="text" name=""><br>
-                              Jenis Barang:<br>
-                              <input type="text" name=""><br>
-                              Lokasi Ditemukan:<br>
-                              <input type="text" name=""><br>
-                              Tanggal Ditemukan:<br>
-                              <input type="text" name=""><br>
-                              Foto Barang:<br>
-                              <input type="file" name="">
-                            </form>  -->
-
 
 <!-- Js -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
@@ -230,6 +262,8 @@
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.min.js"></script> <!-- photo -->
+<script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.js"></script> <!-- photo -->
 <script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->

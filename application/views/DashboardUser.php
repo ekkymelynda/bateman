@@ -133,9 +133,7 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">Bateman</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
+                <li class="current"><a href="#work">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
@@ -273,9 +271,10 @@
 <!-- End Our Work Section -->
 
 <!-- About Section -->
+<!--
 <div id="about" class="page-alternate">
 <div class="container">
-    <!-- Title Page -->
+
     <div class="row">
         <div class="span12">
             <div class="title-page">
@@ -284,11 +283,11 @@
             </div>
         </div>
     </div>
-    <!-- End Title Page -->
+
     
-    <!-- People -->
+
     <div class="row">
-        <!-- Start Profile -->
+
         <div class="span3 profile">
             <div class="image-wrap">
                 <div class="hover-wrap">
@@ -302,16 +301,8 @@
 			Terakhir saya lihat tempatnya hanya sebuah kotak kardus atau toples bekas yang tidak terawat. Akhirnya saya dan teman-teman memiliki ide untuk membuat sebuah aplikasi berbasis web 
 			yang khusus untuk menampung informasi mengenai barang temuan tersebut. Dari ide itulah lahir Bateman.</p>
                 
-<!--            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                </ul>
-            </div> -->
         </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
+
         <div class="span3 profile">
             <div class="image-wrap">
                 <div class="hover-wrap">
@@ -325,15 +316,8 @@
 			Suatu ketika saya coba menanyakan barang saya kepada Administrator Lab dan mencoba mencari barang milik saya, namun barang saya tidak ada dimanapun. Beruntung suatu 
 			ketika teman saya mengabarkan bahwa barang milik saya tersebut dibawa olehnya. Oleh karena itu, saat teman saya mengajak mengerjakan proyek Bateman, saya menyetujuinya tanpa keraguan sedikitpun.</p>
                 
-  <!--          <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                </ul>-->
         </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
+		
         <div class="span3 profile">
             <div class="image-wrap">
                 <div class="hover-wrap">
@@ -346,16 +330,8 @@
             <p class="profile-description">Kata Bateman lahir dari ide yang dicetuskan PM kami saat menyaksikan Film Superhero Batman. Bateman adalah singkatan dari Barang Temuan 
 			dengan logo yang merupakan representasi Batman itu sendiri. Kami berharap Bateman dapat menjadi Superhero yang mampu menghubungkan Anda dengan barang milik Anda.</p>
                 
-<!--            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                </ul>
-            </div> -->
         </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
+
         <div class="span3 profile">
             <div class="image-wrap">
                 <div class="hover-wrap">
@@ -368,20 +344,12 @@
             <p class="profile-description">Superhero sejati tidak selalu lahir dengan kemampuan super atau semacamnya. Superhero sejati juga bisa lahir 
 			dari tangan-tangan kecil kami. Seperti Bateman, yang lahir dengan cara sederhana, namun mampu memberikan manfaat yang cukup istimewa. Terima kasih Bateman!</p>
                 
-<!--            <div class="social">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                </ul>
-            </div> -->
         </div>
-        <!-- End Profile -->
         
     </div>
-    <!-- End People -->
 </div>
 </div>
-<!-- End About Section -->
+-->
 
 <!-- Footer -->
 <footer>

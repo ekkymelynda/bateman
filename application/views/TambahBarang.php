@@ -133,9 +133,10 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/user" class="external" >Beranda</a></li>
+                <li class="current"><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
+                <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/logout" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
@@ -238,6 +239,55 @@
     </div>
 </div>
 <!-- End Our Work Section -->
+
+<!-- Modal -->
+<div id="edit-profil" class="modal hide fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >EDIT PROFIL</a></li>
+            <!--<li style="float: left; display: inline; text-align : center; width : 49%;"><a href="#tab2" data-toggle="tab" >LOGIN GURU</a></li>-->
+        </ul>
+      </div>
+      <div class="modal-body">
+                    <div class="tab-content" style="background-color: white">
+                        <div class="tab-pane fade in active" id="tab1">
+                            <form>
+                              Nama:<br>
+                              <input type="text" name="" value="Muhammad Divi Jaya"><br>
+                              NRP:<br>
+                              <input type="text" name="" value="5113100066"><br>
+                              No HP:<br>
+                              <input type="text" name="" value="085745557887"><br>
+                              Email:<br>
+                              <input type="text" name="" value="divijaya@gmail.com"><br>
+                              Password:<br>
+                              <input type="password" name="" value="1234567"><br>
+                              Foto:<br>
+                              <input type="file" name=""><br>
+                            </form>  
+                        </div>
+        <!--                <div class="tab-pane fade in" id="tab2">
+                            <form>
+                              Username:<br>
+                              <input type="text" name="username_guru"><br>
+                              Password:<br>
+                              <input type="text" name="password_guru">
+                            </form>
+                        </div>-->
+                    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- Footer -->
 <footer>

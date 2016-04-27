@@ -18,19 +18,33 @@
                 <div class="example">
                   <form class="form-group" action="<?php echo base_url();?>admin/barang_lihat?>" method="post">
                     <div class="form-group">
-                        <label class="control-label" for="inputBasicFirstName"><b>Pengguna</b></label>
-                        <input type="text" class="form-control" id="inputBasicFirstName" name="nama_brg"
-                        value="" autocomplete="off" />
+                      <label class="control-label"><b>Pengguna</b></label>
+                          <select class="form-control" name="tahun" required="on">
+                              <option value="">Pilih salah satu</option>
+                              <option value="">A</option>
+                              <option value="">B</option>
+                              <option value="">C</option>
+                              <option value="">D</option>
+                              <option value="">E</option>
+                              <option value="">F</option>
+                          </select>
                     </div>
-                      <div class="form-group">
+                    <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="jenis_brg"
                         value="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>Jenis</b></label>
-                      <input type="money" class="form-control" id="inputBasicEmail" name="harga_jual"
-                      value="" autocomplete="off" />
+                      <label class="control-label"><b>Jenis</b></label>
+                          <select class="form-control" name="tahun" required="on">
+                              <option value="">Pilih salah satu</option>
+                              <option value="">A</option>
+                              <option value="">B</option>
+                              <option value="">C</option>
+                              <option value="">D</option>
+                              <option value="">E</option>
+                              <option value="">F</option>
+                          </select>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Tanggal</b></label>

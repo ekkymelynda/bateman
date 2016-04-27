@@ -64,7 +64,7 @@
                       <label></label>
                     </div>
                     <div class="form-group">
-                      <label>Apakah Anda yakin ingin menghapus data tersebut?</label>
+                      <label><b>Apakah Anda yakin ingin menghapus data tersebut?</b></label>
                       <br>
                     </div>
                     <div class="form-group">

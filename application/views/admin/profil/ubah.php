@@ -19,32 +19,32 @@
                   <form class="form-group" action="<?php echo base_url();?>admin/profil_lihat?>" method="post">
                     </div>
                       <div class="form-group">
-                        <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
+                        <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="jenis_brg"
                         value="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>Email Admin</b></label>
+                      <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
                       <input type="email" class="form-control" id="inputBasicEmail" name="harga_jual"
                       value="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>Password Admin</b></label>
+                      <label class="control-label" for="inputBasicEmail"><b>Password</b></label>
                       <input type="text" class="form-control" id="inputBasicEmail" name="harga_beli"
                       value="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>Alamat Admin</b></label>
+                      <label class="control-label" for="inputBasicEmail"><b>Alamat</b></label>
                       <input type="text" class="form-control" id="inputBasicEmail" name="keuntungan_brg"
                       value="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>No Telp Admin</b></label>
+                      <label class="control-label" for="inputBasicEmail"><b>No Telp</b></label>
                       <input type="text" class="form-control" id="inputBasicEmail" name="jumlah_brg"
                       VALUE="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
                       <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
                       <label></label>

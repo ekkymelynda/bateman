@@ -29,7 +29,6 @@
                 <th>Status</th>
                 <th>Foto</th>
                 <th>Nama Foto</th>
-                <th>ID Jenis</th>
               </tr>
             </thead>
             <tbody>

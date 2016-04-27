@@ -18,37 +18,37 @@
                 <h4 class="example-title">Lihat Data Profil</h4>
                 <div class="example">
                     <div class="form-group">
-                        <label class="control-label" for="inputBasicFirstName"><b>ID Admin</b></label>
+                        <label class="control-label" for="inputBasicFirstName"><b>ID</b></label>
                         <br>
                         <label></label>
                     </div>
                     <div class="form-group">
-                        <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
+                        <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <br>
                         <label></label>
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicEmail"><b>Email Admin</b></label>
+                      <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
                       <br>
                       <label></label>
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Password Admin</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>Password</b></label>
                       <br>
                       <label></label>
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Alamat Admin</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>Alamat</b></label>
                       <br>
                       <label></label>
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>No Telp Admin</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>No Telp</b></label>
                       <br>
                       <label></label>
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
                       <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
                       <br>

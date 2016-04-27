@@ -193,7 +193,7 @@
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>supplier/supplier_buat" data-slug="advanced-animation">
+                  <a class="animsition-link" href="<?php echo base_url(); ?>admin/pengguna_lihat" data-slug="advanced-animation">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Lihat</span>
                   </a>
@@ -208,7 +208,7 @@
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>barang/barang_lihat" data-slug="uikit-colors">
+                  <a class="animsition-link" href="<?php echo base_url(); ?>admin/barang_lihat" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Lihat</span>
                   </a>
@@ -216,7 +216,7 @@
               </ul>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>barang/barang_lihat" data-slug="uikit-colors">
+                  <a class="animsition-link" href="<?php echo base_url(); ?>admin/barang_ubah" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Ubah</span>
                   </a>
@@ -224,7 +224,7 @@
               </ul>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>barang/barang_lihat" data-slug="uikit-colors">
+                  <a class="animsition-link" href="<?php echo base_url(); ?>admin/barang_hapus" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Hapus</span>
                   </a>

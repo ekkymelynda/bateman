@@ -11,17 +11,29 @@ class dashboard extends CI_Controller {
 
     public function index()
 	{
-		$this->load->view('index.php');
+        $this->load->model('barangModel');
+        $this->data['barang'] = $this->barangModel->listBarang();
+		$this->load->view('index.php', $this->data);
     }
+    
+    public function photoprofil($id)
+	{
+        $this->load->model('barangModel');
+		$this->load->view('profilepicture.php', $id);
+    }    
 
     public function user()
     {
-    	$this->load->view('DashboardUser.php');
+        $this->load->model('barangModel');
+        $this->data['barang'] = $this->barangModel->listBarang();
+    	$this->load->view('DashboardUser.php', $this->data);
     }
 
     public function temuan()
     {
-    	$this->load->view('DashboardTemuanUser.php');
+        $this->load->model('barangModel');
+        $this->data['barang'] = $this->barangModel->listBarangTemuan();
+    	$this->load->view('DashboardTemuanUser.php', $this->data);
     }
 
     public function tambah()
@@ -30,7 +42,7 @@ class dashboard extends CI_Controller {
     }
 
     public function checkLoginUser() {
-        $this->load->helper('security');
+        //$this->load->helper('security');
         $this->form_validation->set_rules('email','Email','required|valid_email');
         $this->form_validation->set_rules('password','Password','trim|required|min_length[6]|max_length[32]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]|callback_verifyUser');
         if($this->form_validation->run() == false){
@@ -38,7 +50,7 @@ class dashboard extends CI_Controller {
             $this->index();
         }
         else{
-            $this->user();
+            redirect('../dashboard/user');
         }
     }
 
@@ -60,6 +72,7 @@ class dashboard extends CI_Controller {
 
     public function tambahBarang()
     {
+        $this->load->helper('security');
         $this->form_validation->set_rules('nama_barang','Nama_Barang','required');
         $this->form_validation->set_rules('jenis_barang','Jenis_Barang','required');
         $this->form_validation->set_rules('lokasi_barang','Lokasi_Barang','required');

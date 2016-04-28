@@ -168,7 +168,11 @@
                     	<li class="type-work">Kategori</li>
                         <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
                         <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
-                        <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li>
+                        <li><a href="#filter" data-option-value=".device" style="font-size: 20px;">Device</a></li>
+                        <li><a href="#filter" data-option-value=".notetools" style="font-size: 20px;">Alat Tulis</a></li>
+                        <li><a href="#filter" data-option-value=".accecories" style="font-size: 20px;">Aksesoris</a></li>
+                        <li><a href="#filter" data-option-value=".clothes" style="font-size: 20px;">Pakaian</a></li>
+                        <li><a href="#filter" data-option-value=".other" style="font-size: 20px;">Lain - lain</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
@@ -180,84 +184,132 @@
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Charger Laptop Asus X450-JN</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-1.jpg" 
-                                     alt="Lokasi ditemukan di Lab. Pemrograman 2<br>
-                                          Tanggal ditemukan 15/03/2015 15:30 WIB<br>
-                                          Ditemukan oleh Batman<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Smartphone Asus Zenfone 5</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-2.jpg" 
-                                     alt="Lokasi ditemukan di Plasa Baru 1<br>
-                                          Tanggal ditemukan 12/03/2015 13:30 WIB<br>
-                                          Ditemukan oleh Divi Jaya<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap keys">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci motor Honda</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
-                                     alt="Lokasi ditemukan di Lab. NCC<br>
-                                          Tanggal ditemukan 10/03/2015 10:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Hard Disk Eksternal Seagate</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-4.jpg" 
-                                     alt="Lokasi ditemukan di Lab. IGS<br>
-                                          Tanggal ditemukan 08/03/2015 10:30 WIB<br>
-                                          Ditemukan oleh Ken Genesius<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Flash Disk HP</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-5.jpg"
-                                     alt="Lokasi ditemukan di Lab. AJK<br>
-                                          Tanggal ditemukan 07/03/2015 09:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887">
-                            </li>
+                            <?php
+                                $base = base_url();
+                                foreach($barang as $barangs){
+                                    if($barangs->ID_JENIS == '1')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap accecories">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '2')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap notetools">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '3')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap device">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '4')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap electronics">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '5')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap clothes">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '6')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap other">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                }
+                            ?>
+
                         	<!-- End Item Project -->
                         </ul>
                     </section>

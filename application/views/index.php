@@ -134,7 +134,7 @@ if(validation_errors()!=NULL){
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
+            	<!--<li class="current"><a href="#home-slider">Home</a></li>-->
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#login" >Masuk</a></li>
@@ -169,7 +169,11 @@ if(validation_errors()!=NULL){
                     	<li class="type-work">Kategori</li>
                         <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
                         <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
-                        <li><a href="#filter" data-option-value=".keys" style="font-size: 20px;">Kunci</a></li>
+                        <li><a href="#filter" data-option-value=".device" style="font-size: 20px;">Device</a></li>
+                        <li><a href="#filter" data-option-value=".notetools" style="font-size: 20px;">Alat Tulis</a></li>
+                        <li><a href="#filter" data-option-value=".accecories" style="font-size: 20px;">Aksesoris</a></li>
+                        <li><a href="#filter" data-option-value=".clothes" style="font-size: 20px;">Pakaian</a></li>
+                        <li><a href="#filter" data-option-value=".other" style="font-size: 20px;">Lain - lain</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
@@ -181,84 +185,132 @@ if(validation_errors()!=NULL){
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Charger Laptop Asus X450-JN" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-1-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Charger Laptop Asus X450-JN</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-1.jpg" 
-                                     alt="Lokasi ditemukan di Lab. Pemrograman 2<br>
-                                          Tanggal ditemukan 15/03/2015 15:30 WIB<br>
-                                          Ditemukan oleh Batman<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Smartphone Asus Zenfone 5" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-2-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Smartphone Asus Zenfone 5</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-2.jpg" 
-                                     alt="Lokasi ditemukan di Plasa Baru 1<br>
-                                          Tanggal ditemukan 12/03/2015 13:30 WIB<br>
-                                          Ditemukan oleh Divi Jaya<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap keys">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci motor Honda</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
-                                     alt="Lokasi ditemukan di Lab. NCC<br>
-                                          Tanggal ditemukan 10/03/2015 10:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox Media - Gallery Enabled - Title - Link to Video -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Hard Disk Eksternal Seagate" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-4-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Hard Disk Eksternal Seagate</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-4.jpg" 
-                                     alt="Lokasi ditemukan di Lab. IGS<br>
-                                          Tanggal ditemukan 08/03/2015 10:30 WIB<br>
-                                          Ditemukan oleh Ken Genesius<br>
-                                          Kontak 085745557887">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap electronics">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Flash Disk HP</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-5.jpg"
-                                     alt="Lokasi ditemukan di Lab. AJK<br>
-                                          Tanggal ditemukan 07/03/2015 09:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887">
-                            </li>
+                            <?php
+                                $base = base_url();
+                                foreach($barang as $barangs){
+                                    if($barangs->ID_JENIS == '1')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap accecories">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '2')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap notetools">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '3')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap device">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '4')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap electronics">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '5')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap clothes">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '6')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap other">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                }
+                            ?>
+
                         	<!-- End Item Project -->
                         </ul>
                     </section>
@@ -288,66 +340,77 @@ if(validation_errors()!=NULL){
     <!-- People -->
     <div class="row">
         <!-- Start Profile -->
-    	<div class="span3 profile">
+        <div class="span2"></div>
+    	<div class="span2 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Project Manajer</span>
+                    <span class="overlay-text-thumb">Project<br> Manajer</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="Divi Jaya">
             </div>
             <h3 class="profile-name">Divi Jaya</h3>
+
+            <!-- <p class="profile-description">Saya merasa sedih melihat keadaan tempat penampungan barang temuan yang ada di Laboratorium Teknik Informatika ITS. 
+			Terakhir saya lihat tempatnya hanya sebuah kotak kardus atau toples bekas yang tidak terawat. Akhirnya saya dan teman-teman memiliki ide untuk membuat sebuah aplikasi berbasis web 
+			yang khusus untuk menampung informasi mengenai barang temuan tersebut. Dari ide itulah lahir Bateman.</p> -->
             	
-<!--            <div class="social">
+            <div class="social">
             	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
         <!-- End Profile -->
         
         <!-- Start Profile -->
-    	<div class="span3 profile">
+    	<div class="span2 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Web Designer</span>
+                    <span class="overlay-text-thumb">Web Programmer</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Putro Satrio">
             </div>
             <h3 class="profile-name">Putro Satrio</h3>
+          <!--  <p class="profile-description">Dulu saya pernah lupa membawa pulang harddisk external yang saya miliki. Pdahal banyak file-file penting yang ada di dalamnya.
+			Suatu ketika saya coba menanyakan barang saya kepada Administrator Lab dan mencoba mencari barang milik saya, namun barang saya tidak ada dimanapun. Beruntung suatu 
+			ketika teman saya mengabarkan bahwa barang milik saya tersebut dibawa olehnya. Oleh karena itu, saat teman saya mengajak mengerjakan proyek Bateman, saya menyetujuinya tanpa keraguan sedikitpun.</p> -->
             	
-  <!--          <div class="social">
+            <div class="social">
             	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                </ul>-->
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
         <!-- End Profile -->
         
         <!-- Start Profile -->
-    	<div class="span3 profile">
+    	<div class="span2 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Web Designer</span>
+                    <span class="overlay-text-thumb">Web<br> Designer</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Ekky Melinda">
             </div>
             <h3 class="profile-name">Ekky Melinda</h3>
+        <!--    <p class="profile-description">Kata Bateman lahir dari ide yang dicetuskan PM kami saat menyaksikan Film Superhero Batman. Bateman adalah singkatan dari Barang Temuan 
+			dengan logo yang merupakan representasi Batman itu sendiri. Kami berharap Bateman dapat menjadi Superhero yang mampu menghubungkan Anda dengan barang milik Anda.</p> -->
             	
-<!--            <div class="social">
+            <div class="social">
             	<ul class="social-icons">
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
         <!-- End Profile -->
         
         <!-- Start Profile -->
-    	<div class="span3 profile">
+    	<div class="span2 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
@@ -356,14 +419,17 @@ if(validation_errors()!=NULL){
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-04.jpg" alt="Ken Genesius">
             </div>
             <h3 class="profile-name">Ken Genesius</h3>
+    <!--        <p class="profile-description">Superhero sejati tidak selalu lahir dengan kemampuan super atau semacamnya. Superhero sejati juga bisa lahir 
+			dari tangan-tangan kecil kami. Seperti Bateman, yang lahir dengan cara sederhana, namun mampu memberikan manfaat yang cukup istimewa. Terima kasih Bateman!</p>-->
             	
-<!--            <div class="social">
+            <div class="social">
             	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
-            </div> -->
+            </div>
         </div>
+        <div class="span2"></div>
         <!-- End Profile -->
         
     </div>
@@ -374,7 +440,7 @@ if(validation_errors()!=NULL){
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <a href="#">Barang Temuan Teknik Informatika ITS</a> oleh <a href="#">Bateman Team</a></p>
+	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <span style="color: #FFEB21;">Bateman Team</span></p>
 </footer>
 <!-- End Footer -->
 
@@ -386,7 +452,7 @@ if(validation_errors()!=NULL){
 
 <!-- Modal -->
 <div id="login" class="modal hide fade" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-sm">
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
@@ -399,10 +465,10 @@ if(validation_errors()!=NULL){
       <div class="modal-body">
                     <div class="tab-pane fade in active" id="tab1">
                         <form action="<?php echo base_url(); ?>dashboard/checkLoginUser" name="loginuser" id="loginuser" method="POST" enctype="multipart/form-data">
-                            email:<br>
-                                <input type="text" name="email" placeholder="email"><br>
-                            Password:<br>
-                                <input type="password" name="password" placeholder="Password">
+                            <span style="font-size: 1.2em; float: left;">Email</span>
+                                <input type="text" name="email" placeholder="email" style="float: right; width: 70%;"><br>
+                            <span style="font-size: 1.2em; float: left; margin-top: 3%;">Password</span>
+                                <input type="password" name="password" placeholder="Password" style="float: right; width: 70%;">
                         </form>  
                     </div>
       </div>

@@ -186,7 +186,7 @@
                             <input type="hidden" name="user_id" value="<?php echo $_SESSION['userid']; ?>">
                             <li class="type-work" style="margin-top: 0px; margin-bottom: 4%;"><input type="text" style="width: 97%; height: 80%;" name="nama_barang" placeholder="Nama Barang"></li>
                             <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;">
-                                <select style="width: 97%; height: 80%;" name="jenis_barang">
+                                <select style="width: 100%; height: 80%;" name="jenis_barang">
                                     <option value="">
                                         -----
                                     </option>
@@ -215,7 +215,6 @@
                             <li class="type-work" style="margin-top: 0px; margin-bottom: 5%;"><textarea type="text" rows="5" style="width: 97%; height: 80%; " name="deskripsi_barang" placeholder="Deskripsi mengenai barang temuan ...."></textarea></li>
                         </ul>
                     </nav>
-                </form>
                 <!-- End Filter -->
             </div>
             <div class="span4">
@@ -227,6 +226,7 @@
                         </div>
                     </div>
             </div>
+            </form>
             <div class="span3"></div>
             <div>
                 <button type="submit" class="btn btn-default" form="barangForm" value="submitForm">OK</button>

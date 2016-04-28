@@ -12,7 +12,6 @@ class dashboardModel extends CI_Model {
             //'user_jumlah_post'=>0,
             //'validasi'=>0            
 
-
         );
         $this->db->insert('pengguna', $data);
     }

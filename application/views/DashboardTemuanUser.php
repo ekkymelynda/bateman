@@ -172,39 +172,29 @@
                     	<ul id="thumbs">
                             
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Kunci motor Honda" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-3-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Kunci Motor Honda</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-3.jpg" 
-                                     alt="Lokasi ditemukan di Lab. NCC<br>
-                                          Tanggal ditemukan 10/03/2015 10:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887<br>
-                                          <a href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai sudah diterima Pemilik</a>">
-                            </li>
-                        	<!-- End Item Project -->
+                            <?php
+                                $base = base_url();
+                                foreach($barang as $barangs){
+                                    echo '
+                                            <li class="item-thumbs span3 image-wrap">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                    ';
+                                }
+                            ?>
                             
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 image-wrap">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Flash Disk HP" href="<?php echo base_url(); ?>assets/_include/img/work/full/image-5-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
-                                    <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">Flash Disk HP</span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img style="width: 100%; height: 220px;" src="<?php echo base_url(); ?>assets/_include/img/work/thumbs/image-5.jpg"
-                                     alt="Lokasi ditemukan di Lab. AJK<br>
-                                          Tanggal ditemukan 07/03/2015 09:30 WIB<br>
-                                          Ditemukan oleh Putro Satrio<br>
-                                          Kontak 085745557887<br>
-                                          <a>[Barang sudah diterima Pemilik]</a>">
-                            </li>
                         	<!-- End Item Project -->
                         </ul>
                     </section>

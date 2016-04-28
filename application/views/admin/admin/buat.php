@@ -18,40 +18,38 @@
                 <div class="example">
                   <form autocomplete="off" action="<?php echo base_url();?>admin/admin_lihat" method="post">
                     <div class="form-group">
-                        <label class="control-label" for="inputBasicFirstName"><b>ID Admin</b></label>
-                        <input type="number" class="form-control" id="inputBasicFirstName" name="id_brg"
-                        placeholder="" autocomplete="off" />
-                    </div>
-                    <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
-                        <input type="text" class="form-control" id="inputBasicFirstName" name="nama_brg"
+                        <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"
                         placeholder="" autocomplete="off" />
                     </div>
                       <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Email Admin</b></label>
-                        <input type="email" class="form-control" id="inputBasicFirstName" name="jenis_brg"
+                        <input type="email" class="form-control" id="inputBasicFirstName" name="email_adm"
                         placeholder="" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Password Admin</b></label>
-                      <input type="password" class="form-control" id="inputBasicEmail" name="harga_jual"
+                      <input type="password" class="form-control" id="inputBasicEmail" name="pswd_adm"
                       placeholder="" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Alamat Admin</b></label>
-                      <input type="money" class="form-control" id="inputBasicEmail" name="harga_beli"
+                      <input type="money" class="form-control" id="inputBasicEmail" name="alamat_adm"
                       placeholder="" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>No Telp Admin</b></label>
-                      <input type="money" class="form-control" id="inputBasicEmail" name="keuntungan_brg"
+                      <input type="money" class="form-control" id="inputBasicEmail" name="notlp_adm"
                       placeholder="" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
                       <br>
+                      <input type="money" class="form-control" id="inputBasicEmail" name="foto_adm"
+                      placeholder="" autocomplete="off" />
                       <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
-                      <label></label>
+                      <input type="money" class="form-control" id="inputBasicEmail" name="nama_foto"
+                      placeholder="" autocomplete="off" />
                       <button type="button" class="btn btn">Unggah</button>
                     </div>
                     <div class="form-group">

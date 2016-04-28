@@ -30,16 +30,18 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($h->result() as $row){?>
               <tr>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-              </tr>
+                 <td><?php echo $row->ID_ADM;?></td>
+                 <td><?php echo $row->NAMA_ADM;?></td>
+                 <td><?php echo $row->EMAIL_ADM;?></td>
+                 <td><?php echo $row->PSWD_ADM;?></td>
+                 <td><?php echo $row->ALAMAT_ADM;?></td>
+                 <td><?php echo $row->NOTLP_ADM;?></td>
+                 <td><?php echo $row->FOTO_ADM;?></td>
+                 <td><?php echo $row->NAMA_ADM;?></td>
+              <tr>
+              <?php }?>
             </tbody>
           </table>
         </div>

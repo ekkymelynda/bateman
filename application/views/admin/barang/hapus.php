@@ -16,52 +16,53 @@
               <div class="example-wrap">
                 <h4 class="example-title">Hapus Data Barang</h4>
                 <div class="example">
+                  <?php foreach ($h->result() as $row){?>
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>ID</b></label>
                         <br>
-                        <label></label>
+                        <label><?php echo $row->ID_BRG;?></label>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Pengguna</b></label>
                         <br>
-                        <label></label>
+                        <label><?php echo $row->ID_PGN;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Nama</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->NAMA_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Jenis</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->JENIS_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Tanggal</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->TGLPOST_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Lokasi</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->LOKASI_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Deskripsi</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->DESKRIPSI_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Status</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $row->STATUS_BRG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto Barang</b></label>
                       <br>
-                      <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
+                      <img src="<?php echo $row->FOTO_BRG;?>" width="128px" hight="128px">
                       <br>
-                      <label></label>
+                      <label><?php echo $row->NAMA_FOTO;?></label>
                     </div>
                     <div class="form-group">
                       <label><b>Apakah Anda yakin ingin menghapus data tersebut?</b></label>
@@ -69,12 +70,12 @@
                     </div>
                     <div class="form-group">
                       <div class="col-sm-2">
-                        <form method="post" class="form-group" action="<?php echo base_url(); ?>barang/barang_lihat">
+                        <form method="post" class="form-group" action="<?php echo base_url(); ?>admin/hapusBarang/<?php echo $row->ID_BRG; }?>">
                           <button type="submit" class="btn btn-danger">Ya</button>
                         </form>
                       </div>
                       <div class="col-sm-2">
-                        <form method="get" action="<?php echo base_url(); ?>barang/barang_lihat">
+                        <form method="get" action="<?php echo base_url(); ?>admin/barang_lihat">
                           <button type="submit" class="btn btn-success">Tidak</button>
                          </form>
                       </div>

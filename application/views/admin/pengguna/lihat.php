@@ -30,16 +30,18 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($h->result() as $row){?>
               <tr>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-              </tr>
+                 <td><?php echo $row->ID_PGN;?></td>
+                 <td><?php echo $row->NAMA_PGN;?></td>
+                 <td><?php echo $row->EMAIL_PGN;?></td>
+                 <td><?php echo $row->PSWD_PGN;?></td>
+                 <td><?php echo $row->ALAMAT_PGN;?></td>
+                 <td><?php echo $row->NOTLP_PGN;?></td>
+                 <td><?php echo $row->FOTO_PGN;?></td>
+                 <td><?php echo $row->NAMA_FOTO;?></td>
+              <tr>
+              <?php }?>
             </tbody>
           </table>
         </div>

@@ -29,6 +29,7 @@
                 <th>Status</th>
                 <th>Foto</th>
                 <th>Nama Foto</th>
+                <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -43,15 +44,13 @@
                  <td><?php echo $row->DESKRIPSI_BRG;?></td>
                  <td><?php echo $row->STATUS_BRG;?></td>
                  <td><?php echo $row->FOTO_BRG;?></td>
-                 <td><?php echo $row->STATUS_BRG;?></td>
-                 <td><?php echo $row->FOTO_BRG;?></td>
                  <td><?php echo $row->NAMA_FOTO;?></td>
                  <td class="text-nowrap">
                   <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Ubah">
-                    <a href="<?php echo base_url(); ?>admin/form_update_barang/<?php echo $row->ID_BRG;?>"><i class="icon wb-wrench" aria-hidden="true"></i></a>
+                    <a href="<?php echo base_url(); ?>admin/formubahBarang/<?php echo $row->ID_BRG;?>"><i class="icon wb-wrench" aria-hidden="true"></i></a>
                   </button>
                   <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Hapus">
-                    <a href="<?php echo base_url(); ?>barang/halaman_delete_barang/<?php echo $row->ID_BRG;?>"><i class="icon wb-close" aria-hidden="true"></i></a>
+                    <a href="<?php echo base_url(); ?>admin/formhapusBarang/<?php echo $row->ID_BRG;?>"><i class="icon wb-close" aria-hidden="true"></i></a>
                   </button>
                 </td>
             </tr>

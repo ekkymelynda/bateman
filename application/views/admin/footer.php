@@ -47,6 +47,8 @@
   <script src="<?php  echo base_url(); ?>assets/js/components/jquery-placeholder.js"></script>
 
   <script src="../../assets/js/components/matchheight.js"></script>
+  <script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.min.js"></script> <!-- photo -->
+  <script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.js"></script> <!-- photo -->
 
   <script>
     (function(document, window, $) {

@@ -38,7 +38,7 @@
                  <td><?php echo $row->PSWD_PGN;?></td>
                  <td><?php echo $row->ALAMAT_PGN;?></td>
                  <td><?php echo $row->NOTLP_PGN;?></td>
-                 <td><?php echo $row->FOTO_PGN;?></td>
+                 <td><?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_PGN).'"/></a>';?></td>
                  <td><?php echo $row->NAMA_FOTO;?></td>
               <tr>
               <?php }?>

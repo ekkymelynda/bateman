@@ -44,13 +44,14 @@
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
-                      <br>
-                      <input type="money" class="form-control" id="inputBasicEmail" name="foto_adm"
-                      placeholder="" autocomplete="off" />
-                      <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
-                      <input type="money" class="form-control" id="inputBasicEmail" name="nama_foto"
-                      placeholder="" autocomplete="off" />
-                      <button type="button" class="btn btn">Unggah</button>
+                      <div class="span4">
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="width: 100%;">
+                          <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 300px;"></div>
+                              <div>
+                                  <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang Temuan</span><span class="fileinput-exists">Change</span><input type="file" name="foto_adm"></span>
+                              </div>
+                          </div>
+                    </div>
                     </div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary">Buat</button>

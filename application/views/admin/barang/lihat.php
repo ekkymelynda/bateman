@@ -43,7 +43,7 @@
                  <td><?php echo $row->LOKASI_BRG;?></td>
                  <td><?php echo $row->DESKRIPSI_BRG;?></td>
                  <td><?php echo $row->STATUS_BRG;?></td>
-                 <td><?php echo $row->FOTO_BRG;?></td>
+                 <td><?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_BRG).'"/></a>';?></td>
                  <td><?php echo $row->NAMA_FOTO;?></td>
                  <td class="text-nowrap">
                   <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Ubah">

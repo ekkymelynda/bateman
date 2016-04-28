@@ -16,7 +16,7 @@
               <div class="example-wrap">
                 <h4 class="example-title">Ubah Data Profil</h4>
                 <div class="example">
-                  <form class="form-group" action="<?php echo base_url();?>admin/profil_lihat?>" method="post">
+                  <form class="form-group" action="<?php echo base_url();?>admin/profil_lihat" method="post">
                     </div>
                       <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
@@ -46,7 +46,7 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
+                      <img src="" width="128px" hight="128px">
                       <label></label>
                       <button type="button" class="btn btn">Ganti Foto</button>
                     </div>

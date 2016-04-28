@@ -32,19 +32,30 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($h->result() as $row){?>
               <tr>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
+                 <td><?php echo $row->ID_BRG;?></td>
+                 <td><?php echo $row->ID_PGN;?></td>
+                 <td><?php echo $row->NAMA_BRG;?></td>
+                 <td><?php echo $row->JENIS_BRG;?></td>
+                 <td><?php echo $row->TGLPOST_BRG;?></td>
+                 <td><?php echo $row->LOKASI_BRG;?></td>
+                 <td><?php echo $row->DESKRIPSI_BRG;?></td>
+                 <td><?php echo $row->STATUS_BRG;?></td>
+                 <td><?php echo $row->FOTO_BRG;?></td>
+                 <td><?php echo $row->STATUS_BRG;?></td>
+                 <td><?php echo $row->FOTO_BRG;?></td>
+                 <td><?php echo $row->NAMA_FOTO;?></td>
+                 <td class="text-nowrap">
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Ubah">
+                    <a href="<?php echo base_url(); ?>admin/form_update_barang/<?php echo $row->ID_BRG;?>"><i class="icon wb-wrench" aria-hidden="true"></i></a>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip" data-original-title="Hapus">
+                    <a href="<?php echo base_url(); ?>barang/halaman_delete_barang/<?php echo $row->ID_BRG;?>"><i class="icon wb-close" aria-hidden="true"></i></a>
+                  </button>
+                </td>
             </tr>
+        <?php }?>
             </tbody>
           </table>
         </div>

@@ -18,6 +18,14 @@ class admin extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
+
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('adminModel');
+        $this->load->library('session');
+    }
+
     public function login()
     {
         $this->load->view('admin/login');
@@ -51,6 +59,13 @@ class admin extends CI_Controller {
     public function barang_lihat()
     {
         $this->load->view('admin/header')->view('admin/barang/lihat')->view('admin/footer');
+    }
+
+    //Fungsi Lihat Barang
+    public function lihatBarang()
+    {
+        $data['h'] = $this->adminModel->lihat_barang();
+        $this->load->view('admin/header')->view('admin/barang/lihat',$data)->view('admin/footer');
     }
 
     public function barang_ubah()

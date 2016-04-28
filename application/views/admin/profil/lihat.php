@@ -50,7 +50,7 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
+                      <img src="" width="128px" hight="128px">
                       <br>
                       <label></label>
                     </div>

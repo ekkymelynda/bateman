@@ -48,18 +48,18 @@ class admin extends CI_Controller {
 
     public function buatAdmin()
     {
-            $id_brg=$this->input->post('id_brg');
-            $nama_brg= $this->input->post('nama_brg');
-            $jenis_brg= $this->input->post('jenis_brg');
-            $harga_beli= $this->input->post('harga_beli');
-            $harga_jual= $this->input->post('harga_jual');
-            $keuntungan_brg= $this->input->post('keuntungan_brg');
-            $jumlah_brg= $this->input->post('jumlah_brg');
-            $status_brg= $this->input->post('status_brg');
+        $id_adm= $this->input->post('id_adm');
+        $nama_adm= $this->input->post('nama_adm');
+        $email_adm= $this->input->post('email_adm');
+        $pswd_adm= $this->input->post('pswd_adm');
+        $alamat_adm= $this->input->post('alamat_adm');
+        $notlp_adm= $this->input->post('notlp_adm');
+        $foto_adm= $this->input->post('foto_adm');
+        $nama_foto= $this->input->post('nama_foto');
 
-            $this->barang_model->inbarang($id_brg,$nama_brg,$jenis_brg,$harga_beli,$harga_jual,$keuntungan_brg,$jumlah_brg,$status_brg);       
+            $this->adminModel->buat_admin($id_adm, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm, $foto_adm, $nama_foto);       
 
-            redirect(base_url()."barang/barang_lihat"); 
+            redirect(base_url()."admin/lihatAdmin"); 
         }
 
     public function admin_lihat()

@@ -16,7 +16,7 @@
               <div class="example-wrap">
                 <h4 class="example-title">Buat Data Admin</h4>
                 <div class="example">
-                  <form autocomplete="off" action="<?php echo base_url();?>admin/admin_lihat" method="post">
+                  <form autocomplete="off" action="<?php echo base_url();?>admin/buatAdmin" method="post">
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"

@@ -56,20 +56,20 @@ class adminModel extends CI_Model {
         $this->db->delete('barang');
     }
 
-    function buat_barang($id_brg,$nama_brg,$jenis_brg,$harga_beli,$harga_jual,$keuntungan_brg,$jumlah_brg,$status_brg)
+    function buat_admin($id_adm, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm, $foto_adm, $nama_foto)
     {
         $data = array(
-            'nama_brg' => $nama_brg,
-            'jenis_brg' => $jenis_brg,
-            'tglpost_brg' => $tglpost_brg,
-            'lokasi_brg' => $lokasi_brg,
-            'deskripsi_brg' => $deskripsi_brg,
-            'status_brg' => $status_brg,
-            'foto_brg' => $foto_brg,
+            'id_adm' => $id_adm,
+            'nama_adm' => $nama_adm,
+            'email_adm' => $email_adm,
+            'pswd_adm' => $pswd_adm,
+            'alamat_adm' => $alamat_adm,
+            'notlp_adm' => $notlp_adm,
+            'foto_adm' => $foto_adm,
             'nama_foto' => $nama_foto
             );
-        $this->db->insert('barang', $data);
-        //return $this->db->query("insert into pembeli(id_pmb,nama_pmb,alamat_pmb,notlp_pmb)values(now(),'$id_pmb','$nama_pmb','$alamat_pmb','$notlp_pmb')");
+        $this->db->insert('admin', $data);
+        
     }
 
 }

@@ -686,6 +686,11 @@ nav#menu #menu-nav li a:hover {
 	text-transform: uppercase;
 }
 
+#login {
+    margin: auto -180px;
+    width: 30%;
+}
+
 .work-nav #filters {
 	margin: 0;
 	padding: 0;

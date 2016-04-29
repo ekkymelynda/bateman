@@ -39,7 +39,7 @@
                  <td><?php echo $row->ALAMAT_ADM;?></td>
                  <td><?php echo $row->NOTLP_ADM;?></td>
                  <td><?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_ADM).'"/></a>';?></td>
-                 <td><?php echo $row->NAMA_ADM;?></td>
+                 <td><?php echo $row->NAMA_FOTO;?></td>
               <tr>
               <?php }?>
             </tbody>

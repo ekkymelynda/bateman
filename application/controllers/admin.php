@@ -183,7 +183,7 @@ class admin extends CI_Controller {
                 
                 }            
             }
-            $this->admin_lihat();
+            $this->lihatAdmin();
         }
     }
 

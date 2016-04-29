@@ -141,19 +141,51 @@ class admin extends CI_Controller {
 
     public function buatAdmin()
     {
-        $id_adm= $this->input->post('id_adm');
-        $nama_adm= $this->input->post('nama_adm');
-        $email_adm= $this->input->post('email_adm');
-        $pswd_adm= $this->input->post('pswd_adm');
-        $alamat_adm= $this->input->post('alamat_adm');
-        $notlp_adm= $this->input->post('notlp_adm');
-        $foto_adm= $this->input->post('foto_adm');
-        $nama_foto= $this->input->post('nama_foto');
-
-            $this->adminModel->buat_admin($id_adm, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm, $foto_adm, $nama_foto);       
-
-            redirect(base_url()."admin/lihatAdmin"); 
+        $this->load->helper('security');
+        $this->form_validation->set_rules('nama_adm','Nama_Admin','required');
+        $this->form_validation->set_rules('email_adm','Email_Admin','required');
+        $this->form_validation->set_rules('pswd_adm','Password_Admin','required');
+        $this->form_validation->set_rules('alamat_adm','Alamat_Admin','required');
+        $this->form_validation->set_rules('notlp_adm','Nomor_Telepon_Admin','required');
+        
+        if($this->form_validation->run() == false){
+            $this->form_validation->set_message('Incorrect Data.');
+            $this->admin_buat();
         }
+        else 
+        {
+            $nama_adm = $this->input->post('nama_adm');
+            $email_adm = $this->input->post('email_adm');
+            $pswd_adm = $this->input->post('pswd_adm');
+            $alamat_adm = $this->input->post('alamat_adm');
+            $notlp_adm = $this->input->post('notlp_adm');
+        
+            $this->adminModel->buat_admin($nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm);
+
+            if(!empty($_FILES['image']['tmp_name']))
+            {
+                $file = $_FILES['image']['tmp_name'];
+                if(!isset($file)){
+                    echo "Please select an image.";
+                }
+                else{
+                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                    $image_name = addslashes($_FILES['image']['name']);
+                    $image_size = getimagesize($_FILES['image']['tmp_name']);
+
+                    //$this->load->model('barangModel');
+                    $this->adminModel->upload_foto($image, $image_name);
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                     
+                
+                }            
+            }
+            $this->admin_lihat();
+        }
+    }
 
     public function admin_lihat()
     {

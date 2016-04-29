@@ -16,7 +16,7 @@
               <div class="example-wrap">
                 <h4 class="example-title">Buat Data Admin</h4>
                 <div class="example">
-                  <form autocomplete="off" action="<?php echo base_url();?>admin/buatAdmin" method="post">
+                  <form autocomplete="off" name="buatAdminForm" id="buatAdminForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/buatAdmin" method="post">
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"
@@ -45,16 +45,17 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
                       <div class="span4">
-                      <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="width: 100%;">
-                          <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 300px;"></div>
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                          <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
                               <div>
-                                  <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang Temuan</span><span class="fileinput-exists">Change</span><input type="file" name="foto_adm"></span>
+                                  <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Profil</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
+                                  <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
                               </div>
                           </div>
                     </div>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Buat</button>
+                      <button type="submit" class="btn btn-primary" name="buatAdminForm">Buat</button>
                     </div>
                   </form>
                 </div>

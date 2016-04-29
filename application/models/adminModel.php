@@ -78,7 +78,7 @@ class adminModel extends CI_Model {
     }
 
 
-    function ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
+    public function ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
     {
         $data = array(
             'nama_brg' => $nama_brg,
@@ -95,27 +95,35 @@ class adminModel extends CI_Model {
         $this->db->update('barang', $data);
     }
 
-    function hapus_barang($id_brg)
+    public function hapus_barang($id_brg)
     {
         $this->db->where("id_brg", $id_brg);
         $this->db->delete('barang');
     }
 
-    function buat_admin($id_adm, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm, $foto_adm, $nama_foto)
+    public function buat_admin($nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm)
     {
-        $data = array(
-            'id_adm' => $id_adm,
-            'nama_adm' => $nama_adm,
-            'email_adm' => $email_adm,
-            'pswd_adm' => $pswd_adm,
-            'alamat_adm' => $alamat_adm,
-            'notlp_adm' => $notlp_adm,
-            'foto_adm' => $foto_adm,
-            'nama_foto' => $nama_foto
+        $data = array (
+            'NAMA_ADM' => $nama_adm,
+            'EMAIL_ADM' => $email_adm,
+            'PSWD_ADM' => $pswd_adm,
+            'ALAMAT_ADM' => $alamat_adm,
+            'NOTLP_ADM' => $notlp_adm,
             );
         $this->db->insert('admin', $data);
         
     }
+
+    public function upload_foto($image, $image_name){
+
+        $this->db->select_max('ID_ADM');
+        $this->db->from('admin');
+        $query = $this->db->get();
+        //echo $query->row()->id;
+        $id = $query->row()->ID_ADM;
+        $this->db->query("UPDATE admin SET FOTO_ADM = '$image', NAMA_FOTO = '$image_name' WHERE ID_ADM='$id'");
+    }
+
 
 }
 ?>

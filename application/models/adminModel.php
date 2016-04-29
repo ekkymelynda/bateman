@@ -67,6 +67,16 @@ class adminModel extends CI_Model {
         }
     }
 
+    public function ubahAdmin($userid, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm)
+    {
+       $this->db->query("UPDATE admin SET NAMA_ADM = '$nama_adm', EMAIL_ADM = '$email_adm', PSWD_ADM = '$pswd_adm', ALAMAT_ADM = '$alamat_adm', NOTLP_ADM = '$notlp_adm' WHERE ID_ADM='$userid'");
+    }
+
+    public function ubah_foto_admin($userid, $image, $image_name){
+
+        $this->db->query("UPDATE admin SET FOTO_ADM = '$image', NAMA_FOTO = '$image_name' WHERE ID_ADM='$userid'");
+    }
+
 
     function ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
     {

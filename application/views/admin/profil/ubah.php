@@ -16,42 +16,48 @@
               <div class="example-wrap">
                 <h4 class="example-title">Ubah Data Profil</h4>
                 <div class="example">
-                  <form class="form-group" action="<?php echo base_url();?>admin/profil_lihat" method="post">
+                  <form class="form-group" name="adminForm" id="adminForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/updateAdmin" method="post">
                     </div>
                       <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
-                        <input type="text" class="form-control" id="inputBasicFirstName" name="jenis_brg"
-                        value="" autocomplete="off" />
+                        <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"
+                        value="<?php echo $_SESSION['name']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
-                      <input type="email" class="form-control" id="inputBasicEmail" name="harga_jual"
-                      value="" autocomplete="off" />
+                      <input type="email" class="form-control" id="inputBasicEmail" name="email_adm"
+                      value="<?php echo $_SESSION['email']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Password</b></label>
-                      <input type="text" class="form-control" id="inputBasicEmail" name="harga_beli"
-                      value="" autocomplete="off" />
+                      <input type="password" class="form-control" id="inputBasicEmail" name="pswd_adm"
+                      value="<?php echo $_SESSION['pass']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Alamat</b></label>
-                      <input type="text" class="form-control" id="inputBasicEmail" name="keuntungan_brg"
-                      value="" autocomplete="off" />
+                      <input type="text" class="form-control" id="inputBasicEmail" name="alamat_adm"
+                      value="<?php echo $_SESSION['alamat']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>No Telp</b></label>
-                      <input type="text" class="form-control" id="inputBasicEmail" name="jumlah_brg"
-                      VALUE="" autocomplete="off" />
+                      <input type="text" class="form-control" id="inputBasicEmail" name="notlp_adm"
+                      value="<?php echo $_SESSION['telp']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <img src="" width="128px" hight="128px">
+                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" height="128px">'; ?>
                       <label></label>
-                      <button type="button" class="btn btn">Ganti Foto</button>
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                        <div class="fileinput" data-trigger="fileinput" ></div>
+                          <div>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Profil</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
+                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
+                          </div>
+                      </div>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                      <button type="submit" class="btn btn-primary" name="adminForm">Simpan</button>
                     </div>
                   </form>
                 </div>

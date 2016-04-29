@@ -63,6 +63,66 @@ class admin extends CI_Controller {
         }
     }
 
+    public function updateAdmin()
+    {
+        $this->load->helper('security');
+        $this->form_validation->set_rules('nama_adm','Nama_Admin','required');
+        $this->form_validation->set_rules('email_adm','Email_Admin','required');
+        $this->form_validation->set_rules('pswd_adm','Password_Admin','required');
+        $this->form_validation->set_rules('alamat_adm','Alamat_Admin','required');
+        $this->form_validation->set_rules('notlp_adm','Nomor_Telepon_Admin','required');
+        
+        if($this->form_validation->run() == false){
+            $this->form_validation->set_message('Incorrect Data.');
+            $this->profil_ubah();
+        }
+        else {
+            $userid = $this->session->userdata('userid');
+            $nama_adm = $this->input->post('nama_adm');
+            $email_adm = $this->input->post('email_adm');
+            $pswd_adm = $this->input->post('pswd_adm');
+            $alamat_adm = $this->input->post('alamat_adm');
+            $notlp_adm = $this->input->post('notlp_adm');
+        
+            $this->adminModel->ubahAdmin($userid, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm);
+
+            $newdata = array(
+            'userid' => $userid,
+            'name' => $nama_adm,
+            'email' => $email_adm,
+            'pass' => $pswd_adm,
+            'alamat' => $alamat_adm, 
+            'telp' => $notlp_adm, 
+            );
+            $this->session->set_userdata($newdata);
+            if(!empty($_FILES['image']['tmp_name']))
+            {
+                $file = $_FILES['image']['tmp_name'];
+                if(!isset($file)){
+                    echo "Please select an image.";
+                }
+                else{
+                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                    $image_name = addslashes($_FILES['image']['name']);
+                    $image_size = getimagesize($_FILES['image']['tmp_name']);
+
+                    //$this->load->model('barangModel');
+                    $this->adminModel->ubah_foto_admin($userid, $image, $image_name);
+                    $this->session->unset_userdata('foto');
+                    $this->session->set_userdata('foto',$image);
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                     
+                
+                }            
+            }
+
+            $this->profil_lihat(); 
+        }
+    }    
+
 
     public function profil_lihat()
     {

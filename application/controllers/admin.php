@@ -31,6 +31,39 @@ class admin extends CI_Controller {
         $this->load->view('admin/login');
     }
 
+    public function checkLoginAdmin() 
+    {
+        //$this->load->helper('security');
+        $this->form_validation->set_rules('email_adm','Email','required|valid_email');
+        $this->form_validation->set_rules('pswd_adm','Password','trim|required|min_length[6]|max_length[32]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]|callback_verifyAdmin');
+        if($this->form_validation->run() == false)
+        {
+            //redirect('dashboard');
+            $this->login();
+        }
+        else{
+            redirect('../admin/profil_lihat');
+        }
+    }
+
+    public function verifyAdmin()
+    {
+        $username = $this->input->post('email_adm');
+        $pass = $this->input->post('pswd_adm');
+        
+        $this->load->model('adminModel');
+        $this->load->library('session');
+        if($this->adminModel->loginAdmin($username, $pass)){
+            return true;
+            //echo var_dump(query);
+        }
+        else{
+            $this->form_validation->set_message('verifyAdmin','Incorrect Username or Password. Please try again.');
+            return false;
+        }
+    }
+
+
     public function profil_lihat()
     {
         $this->load->view('admin/header')->view('admin/profil/lihat')->view('admin/footer');

@@ -33,6 +33,41 @@ class adminModel extends CI_Model {
         return $query;
     }
 
+    public function loginAdmin($username, $pass)
+    {
+        date_default_timezone_set("Asia/Jakarta");
+        $this->db->select('NAMA_ADM, EMAIL_ADM, PSWD_ADM, ID_ADM, ALAMAT_ADM, NOTLP_ADM, FOTO_ADM');
+        $this->db->from('admin');
+        $this->db->where('EMAIL_ADM', $username);
+        $this->db->where('PSWD_ADM', $pass);
+        $waktu=date("Y-m-d H:i:s");
+        //$this->db->query("UPDATE users SET user_last_login='$waktu' where email='$name'");
+
+        $query = $this->db->get();
+        $idid = $query->result();
+
+        if($query->num_rows() == 1){
+            $data = array();
+
+            $newdata = array(
+            'username'  => $username,
+            'userid' => $idid[0]->ID_ADM,
+            'name' => $idid[0]->NAMA_ADM,
+            'email' => $idid[0]->EMAIL_ADM,
+            'pass' => $idid[0]->PSWD_ADM,
+            'alamat' => $idid[0]->ALAMAT_ADM, 
+            'telp' => $idid[0]->NOTLP_ADM, 
+            'foto' => $idid[0]->FOTO_ADM
+            );
+            $this->session->set_userdata($newdata);
+
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+
     function ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
     {
         $data = array(

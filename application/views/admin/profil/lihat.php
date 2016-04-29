@@ -20,37 +20,37 @@
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>ID</b></label>
                         <br>
-                        <label></label>
+                        <label><?php echo $_SESSION['userid']; ?></label>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <br>
-                        <label></label>
+                        <label><?php echo $_SESSION['name']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $_SESSION['email']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Password</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $_SESSION['pass']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Alamat</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $_SESSION['alamat']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>No Telp</b></label>
                       <br>
-                      <label></label>
+                      <label><?php echo $_SESSION['telp']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <img src="" width="128px" hight="128px">
+                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" hight="128px">'; ?>
                       <br>
                       <label></label>
                     </div>

@@ -440,7 +440,7 @@ if(validation_errors()!=NULL){
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <span style="color: #FFEB21;">Bateman Team</span></p>
+	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Bateman Team</span></a></p>
 </footer>
 <!-- End Footer -->
 

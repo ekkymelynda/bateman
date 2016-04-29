@@ -65,7 +65,7 @@
         <h2 class="brand-text">Bateman</h2>
       </div>
       <p>Masuk ke halaman akun Anda</p>
-      <form method="post" action="<?php echo base_url(); ?>admin/profil_lihat">
+      <form method="post" action="<?php echo base_url(); ?>admin/checkLoginAdmin">
         <div class="form-group">
           <label class="sr-only" for="inputName">Email</label>
           <input type="email" class="form-control" id="inputName" name="email_adm" placeholder="Email">

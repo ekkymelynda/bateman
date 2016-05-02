@@ -156,27 +156,31 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-<!--                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li> -->
+                        <li><a href="#filter" data-option-value="*" class="selected" style="font-size: 20px;">Semua</a></li>
+                        <li><a href="#filter" data-option-value=".electronics" style="font-size: 20px;">Elektronik</a></li>
+                        <li><a href="#filter" data-option-value=".device" style="font-size: 20px;">Device</a></li>
+                        <li><a href="#filter" data-option-value=".notetools" style="font-size: 20px;">Alat Tulis</a></li>
+                        <li><a href="#filter" data-option-value=".accecories" style="font-size: 20px;">Aksesoris</a></li>
+                        <li><a href="#filter" data-option-value=".clothes" style="font-size: 20px;">Pakaian</a></li>
+                        <li><a href="#filter" data-option-value=".other" style="font-size: 20px;">Lain - lain</a></li>
                     </ul>
                 </nav>
                 <!-- End Filter -->
             </div>
             
-            <div class="span12">
+            <div class="span9">
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
                             
-							<!-- Item Project and Filter Name -->
+<!-- Item Project and Filter Name -->
                             <?php
                                 $base = base_url();
                                 foreach($barang as $barangs){
-                                    echo '
-                                            <li class="item-thumbs span3 image-wrap">
+                                    if($barangs->ID_JENIS == '1')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap accecories">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
                                                         <span class="overlay-img"></span>
@@ -191,10 +195,111 @@
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
 
-                                    ';
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '2')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap notetools">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '3')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap device">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '4')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap electronics">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '5')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap clothes">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
+                                    if($barangs->ID_JENIS == '6')
+                                    {
+                                        echo '
+                                            <li class="item-thumbs span3 image-wrap other">
+                                                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="'.$barangs->NAMA_BRG.'" href="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'">
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;">'.$barangs->NAMA_BRG.'</span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
+                                                         alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
+                                                              Kontak '.$barangs->NOTLP_PGN.'">
+                                            </li>                                     
+
+                                        ';
+                                    }
                                 }
                             ?>
-                            
+
                         	<!-- End Item Project -->
                         </ul>
                     </section>

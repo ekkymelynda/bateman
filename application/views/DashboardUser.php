@@ -133,7 +133,8 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
-                <li class="current"><a href="#work">Beranda</a></li>
+                <!-- <li class="current"><a href="#work">Beranda</a></li> -->
+                <li><a href="#work">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>

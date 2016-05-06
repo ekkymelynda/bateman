@@ -10,8 +10,10 @@ class adminModel extends CI_Model {
 
     function lihat_barang()
     {
-        $query = $this->db->get('barang');
+        $query=$this->db->query("SELECT DISTINCT barang.*, jenis_barang.* FROM barang, jenis_barang WHERE barang.ID_JENIS = jenis_barang.ID_JENIS");
         return $query;
+        //$query = $this->db->get('barang');
+        //return $query;
     }
 
     function lihat_pengguna()

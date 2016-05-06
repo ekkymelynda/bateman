@@ -38,7 +38,7 @@
                     <div class="form-group">
                       <label class="control-label"><b>Jenis</b></label>
                           <select class="form-control" name="jenis_brg" required="off">
-                              <option value="<?php echo $row->JENIS_BRG;?>"><?php echo $row->JENIS_BRG;?></option>
+                              <option value="<?php echo $row->JENIS_BARANG;?>"><?php echo $row->JENIS_BARANG;?></option>
                               <option value="">A</option>
                               <option value="">B</option>
                               <option value="">C</option>

@@ -30,9 +30,12 @@ class adminModel extends CI_Model {
 
     function parsing_id_barang($id_brg)
     {
-        $this->db->where("id_brg", $id_brg);
-        $query = $this->db->get('barang');
+        $query=$this->db->query("SELECT DISTINCT barang.*, jenis_barang.* FROM barang, jenis_barang 
+        WHERE barang.ID_JENIS = jenis_barang.ID_JENIS and barang.ID_BRG = '$id_brg'");
         return $query;
+        //$this->db->where("id_brg", $id_brg);
+        //$query = $this->db->get('barang');
+        //return $query;
     }
 
     public function loginAdmin($username, $pass)

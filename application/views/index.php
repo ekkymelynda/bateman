@@ -106,7 +106,7 @@ if(validation_errors()!=NULL){
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider" style="height: 30%">	
+<div id="home-slider" style="height: 92%">	
     <div class="overlay"></div>
 
     <div class="slider-text">

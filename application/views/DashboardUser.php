@@ -2,9 +2,9 @@
 <?php
     error_reporting(E_ALL & ~E_NOTICE);
     if($_SESSION['username']){
-        echo $_SESSION['username'];
+        /*echo $_SESSION['username'];
         echo $_SESSION['userid'];
-        echo $_SESSION['name'];
+        echo $_SESSION['name'];*/
     }
     else{
         //header("Location:../dashboard/index");
@@ -105,7 +105,7 @@
 <!-- End of Splash Screen -->
     
 <!-- Homepage Slider -->
-<div id="home-slider" style="height: 30%">	
+<!-- <div id="home-slider" style="height: 30%">	
     <div class="overlay"></div>
 
     <div class="slider-text">
@@ -119,7 +119,7 @@
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
-</div>
+</div> -->
 <!-- End Homepage Slider -->  
     
 <!-- Header -->
@@ -137,7 +137,8 @@
                 <li><a href="#work">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
-                <li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li>
+                <!--<li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li> -->
+                <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/logout" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
@@ -417,16 +418,16 @@
 <!-- End Back to Top -->
 
 <!-- Modal -->
-<div id="edit-profil" class="modal hide fade" role="dialog">
+<!--<div id="edit-profil" class="modal hide fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <ul class="nav nav-tabs" id="myTab">
-            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >EDIT PROFIL</a></li>
+            <li class="active" style="text-align : center; width : 100%;"><a href="#tab1" data-toggle="tab" >EDIT PROFIL</a></li> -->
             <!--<li style="float: left; display: inline; text-align : center; width : 49%;"><a href="#tab2" data-toggle="tab" >LOGIN GURU</a></li>-->
-        </ul>
+  <!--      </ul>
       </div>
       <div class="modal-body">
                     <div class="tab-content" style="background-color: white">
@@ -445,7 +446,7 @@
                               Foto:<br>
                               <input type="file" name=""><br>
                             </form>  
-                        </div>
+                        </div> -->
         <!--                <div class="tab-pane fade in" id="tab2">
                             <form>
                               Username:<br>
@@ -454,7 +455,7 @@
                               <input type="text" name="password_guru">
                             </form>
                         </div>-->
-                    </div>
+<!--                    </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
@@ -463,7 +464,7 @@
     </div>
 
   </div>
-</div>
+</div> -->
 <!-- Modal -->
 
 

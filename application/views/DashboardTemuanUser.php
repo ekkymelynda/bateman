@@ -96,7 +96,7 @@
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider" style="height: 30%">	
+<!--<div id="home-slider" style="height: 30%">	
     <div class="overlay"></div>
 
     <div class="slider-text">
@@ -110,7 +110,7 @@
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
-</div>
+</div>-->
 <!-- End Homepage Slider -->  
     
 <!-- Header -->

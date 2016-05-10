@@ -40,11 +40,19 @@ class dashboard extends CI_Controller {
         $this->data['barang'] = $this->barangModel->listBarangTemuan();
     	$this->load->view('DashboardTemuanUser.php', $this->data);
     }
+    
+    public function editprofil()
+    {
+        $this->load->model('userModel');
+        $id = $_SESSION['userid'];
+        $this->data['user'] = $this->userModel->datauser($id);
+    	$this->load->view('EditProfil.php', $this->data);
+    }
 
     public function tambah()
     {
         $this->load->view('TambahBarang.php');
-    }
+    }  
 
     public function checkLoginUser() {
         //$this->load->helper('security');
@@ -186,7 +194,7 @@ class dashboard extends CI_Controller {
     public function logout(){
         $this->load->library('session');
         $this->load->view('logout');
-        redirect('dashboard');
+        //redirect('dashboard');
     }
 }
 

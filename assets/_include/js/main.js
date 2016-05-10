@@ -79,8 +79,8 @@ BRUSHED.slider = function(){
 		slides 					:  	[			// Slideshow Images
 											{image : 'assets/_include/img/slider-images/image01.jpg', title : '<div style="font-size: 3.0em; font-family: Titillium Web, sans-serif">Selamat Datang di BATEMAN</div>', thumb : '', url : ''},
 											{image : 'assets/_include/img/slider-images/image02.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Tempat paling tepat</div><div style="margin-top: -180px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Untuk menemukan barang hilang di sekitar anda</div>', thumb : '', url : ''},
-											{image : 'assets/_include/img/slider-images/image03.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif"></div>', thumb : '', url : ''},
-											{image : 'assets/_include/img/slider-images/image04.jpg', title : '', thumb : '', url : ''}  
+											{image : 'assets/_include/img/slider-images/image04.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif"></div>', thumb : '', url : ''},
+											{image : 'assets/_include/img/slider-images/image03.jpg', title : '', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   

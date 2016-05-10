@@ -114,7 +114,7 @@ if(validation_errors()!=NULL){
     </div>   
 	
 	<div class="control-nav">
-        <a id="prevslide" class="load-item" style="opacity: 1"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="prevslide" class="load-item" ><i class="font-icon-arrow-simple-left"></i></a>
         <a id="nextslide" class="load-item" ><i class="font-icon-arrow-simple-right"></i></a>
         <ul id="slide-list" style="margin-left: -42px;"></ul>
         

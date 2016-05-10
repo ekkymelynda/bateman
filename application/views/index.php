@@ -332,7 +332,7 @@ if(validation_errors()!=NULL){
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Tentang Kami</h2>
-                <h3 class="title-description">Developer Bateman</h3>
+                <h3 class="title-description">Pengembang Bateman</h3>
             </div>
         </div>
     </div>
@@ -346,7 +346,7 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Project<br> Manajer</span>
+                    <span class="overlay-text-thumb">Manejer<br> Proyek</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="Divi Jaya">
             </div>
@@ -370,7 +370,7 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Web Programmer</span>
+                    <span class="overlay-text-thumb">Programmer Web</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Putro Satrio">
             </div>
@@ -393,11 +393,11 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Web<br> Designer</span>
+                    <span class="overlay-text-thumb">Designer<br> Web</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Ekky Melinda">
             </div>
-            <h3 class="profile-name">Ekky Melinda</h3>
+            <h3 class="profile-name">Ekky Melynda</h3>
         <!--    <p class="profile-description">Kata Bateman lahir dari ide yang dicetuskan PM kami saat menyaksikan Film Superhero Batman. Bateman adalah singkatan dari Barang Temuan 
 			dengan logo yang merupakan representasi Batman itu sendiri. Kami berharap Bateman dapat menjadi Superhero yang mampu menghubungkan Anda dengan barang milik Anda.</p> -->
             	

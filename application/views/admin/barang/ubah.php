@@ -17,7 +17,7 @@
                 <h4 class="example-title">Ubah Data Barang</h4>
                 <div class="example">
                   <?php foreach ($h->result() as $row){?>
-                  <form class="form-horizontal" id="exampleStandardForm" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
+                  <form class="form-horizontal" id="exampleStandardForm2" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
                     <div class="form-group">
                       <label class="control-label"><b>Pengguna</b></label>
                           <select class="form-control" name="id_png" required="off">
@@ -81,7 +81,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                      <button type="submit" id="validateButton2" class="btn btn-primary">Simpan</button>
                     </div>
                   </form>
                 </div>

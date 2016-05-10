@@ -16,7 +16,7 @@
               <div class="example-wrap">
                 <h4 class="example-title">Buat Data Admin</h4>
                 <div class="example">
-                  <form autocomplete="off" name="buatAdminForm" id="buatAdminForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/buatAdmin" method="post">
+                  <form autocomplete="off" name="buatAdminForm" id="exampleStandardForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/buatAdmin" method="post">
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama Admin</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"
@@ -56,7 +56,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn btn-primary" name="buatAdminForm">Buat</button>
+                      <button type="submit" class="btn btn-primary" id="validateButton2" name="buatAdminForm">Buat</button>
                     </div>
                   </form>
                 </div>

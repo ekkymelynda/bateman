@@ -1,6 +1,6 @@
 <!-- Footer -->
   <footer class="site-footer">
-    <span class="site-footer-legal">© 2016 Sistem Informasi Barang Temuan</span>
+    <span class="site-footer-legal">© 2016 Barang Temuan Teknik Informatika ITS</span>
     <div class="site-footer-right">
       Dibuat <i class="red-600 wb wb-heart"></i> oleh Kelompok 8
     </div>

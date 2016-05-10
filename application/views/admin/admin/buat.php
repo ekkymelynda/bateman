@@ -45,7 +45,6 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" height="128px">'; ?>
                       <label></label>
                       <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                         <div class="fileinput" data-trigger="fileinput" ></div>

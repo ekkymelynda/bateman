@@ -147,7 +147,7 @@
               <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="uikit">
                 <i class="site-menu-icon wb-home" aria-hidden="true"></i>
-                <span class="site-menu-title">Profil</span>
+                <span class="site-menu-title">Profil Pengguna</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
@@ -170,7 +170,7 @@
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="uikit">
                 <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Admin</span>
+                <span class="site-menu-title">Data Admin</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
@@ -191,7 +191,7 @@
               <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="advanced">
                 <i class="site-menu-icon wb-book" aria-hidden="true"></i>
-                <span class="site-menu-title">Pengguna</span>
+                <span class="site-menu-title">Data Pengguna</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
@@ -206,7 +206,7 @@
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="structure">
                 <i class="site-menu-icon wb-plugin" aria-hidden="true"></i>
-                <span class="site-menu-title">Barang</span>
+                <span class="site-menu-title">Data Barang</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">

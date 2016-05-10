@@ -17,7 +17,7 @@
                 <h4 class="example-title">Ubah Data Barang</h4>
                 <div class="example">
                   <?php foreach ($h->result() as $row){?>
-                  <form class="form-group" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
+                  <form class="form-horizontal" id="exampleStandardForm" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
                     <div class="form-group">
                       <label class="control-label"><b>Pengguna</b></label>
                           <select class="form-control" name="id_png" required="off">
@@ -68,14 +68,17 @@
                       value="<?php echo $row->STATUS_BRG;?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Foto Barang</b></label>
+                      <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <input type="image" class="form-control" id="inputBasicPassword" name="foto_brg"
-                      value="<?php echo $row->FOTO_BRG;?>" autocomplete="off" />
-                      <img src="<?php  echo base_url(); ?>assets/portraits/1.jpg" width="128px" hight="128px">
-                      <input type="text" class="form-control" id="inputBasicPassword" name="nama_foto"
-                      value="<?php echo $row->NAMA_FOTO; }?>" autocomplete="off" />
-                      <button type="button" class="btn btn">Ganti Foto</button>
+                      <?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_BRG).'"/></a>';}?></td>
+                      <label></label>
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                        <div class="fileinput" data-trigger="fileinput" ></div>
+                          <div>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Ubah</span><input type="file" name="foto_brg"></span>
+                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
+                          </div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary">Simpan</button>

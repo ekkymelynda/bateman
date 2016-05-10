@@ -9,7 +9,8 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Shortcodes | Brushed | Responsive One Page Template</title>   
+<title>Shortcodes | Brushed | Responsive One Page Template</title>
+<link rel="icon" href="<?php  echo base_url(); ?>assets/images/bateman.png" type="image/x-icon">   
 
 <meta name="description" content="Insert Your Site Description" /> 
 

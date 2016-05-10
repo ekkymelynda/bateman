@@ -24,7 +24,7 @@
                 <th>Email</th>
                 <th>Password</th>
                 <th>Alamat</th>
-                <th>No Telp</th>
+                <th>Telp</th>
                 <th>Foto</th>
                 <th>Nama Foto</th>
               </tr>

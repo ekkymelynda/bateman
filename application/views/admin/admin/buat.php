@@ -43,16 +43,17 @@
                       placeholder="" autocomplete="off" />
                     </div>
                     <div class="form-group">
-                      <label class="control-label" for="inputBasicPassword"><b>Foto Admin</b></label>
-                      <div class="span4">
+                      <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
+                      <br>
+                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" height="128px">'; ?>
+                      <label></label>
                       <div class="fileinput fileinput-new text-center" data-provides="fileinput">
-                          <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
-                              <div>
-                                  <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Profil</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
-                                  <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
-                              </div>
+                        <div class="fileinput" data-trigger="fileinput" ></div>
+                          <div>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Profil</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
+                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
                           </div>
-                    </div>
+                      </div>
                     </div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary" name="buatAdminForm">Buat</button>

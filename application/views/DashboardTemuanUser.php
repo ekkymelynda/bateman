@@ -12,7 +12,8 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Bateman | Barang Temuan Teknik Informatika ITS</title>   
+<title>Bateman | Barang Temuan Teknik Informatika ITS</title>
+<link rel="icon" href="<?php  echo base_url(); ?>assets/images/bateman.png" type="image/x-icon">   
 
 <meta name="description" content="Insert Your Site Description" /> 
 

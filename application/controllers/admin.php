@@ -35,7 +35,7 @@ class admin extends CI_Controller {
     {
         //$this->load->helper('security');
         $this->form_validation->set_rules('email_adm','Email','required|valid_email');
-        $this->form_validation->set_rules('pswd_adm','Password','trim|required|min_length[6]|max_length[32]|regex_match[/^[a-zA-Z0-9_-~!@#$%^&*()+=]{6,32}$/]|callback_verifyAdmin');
+        $this->form_validation->set_rules('pswd_adm','Password','trim|required|max_length[32]|callback_verifyAdmin');
         if($this->form_validation->run() == false)
         {
             //redirect('dashboard');

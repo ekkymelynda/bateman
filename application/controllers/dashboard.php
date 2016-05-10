@@ -130,7 +130,56 @@ class dashboard extends CI_Controller {
             }  
         
         }
-    }    
+    }
+    
+    public function editPenggunaProfil()
+    {
+        $this->load->helper('security');
+        $this->form_validation->set_rules('nama_barang','Nama_Barang','required');
+        $this->form_validation->set_rules('jenis_barang','Jenis_Barang','required');
+        $this->form_validation->set_rules('lokasi_barang','Lokasi_Barang','required');
+        $this->form_validation->set_rules('deskripsi_barang','Deskripsi_Barang','required');
+        
+        if($this->form_validation->run() == false){
+            $this->form_validation->set_message('Incorrect Data.');
+            $this->tambah();
+        }
+        else {
+            $userid = $this->input->post('user_id');
+            $nama_barang = $this->input->post('nama_barang');
+            $jenis_barang = $this->input->post('jenis_barang');
+            $lokasi_barang = $this->input->post('lokasi_barang');
+            $tanggal = $this->input->post('tanggal');
+            $waktu = $this->input->post('waktu');
+            $deskripsi = $this->input->post('deskripsi_barang');
+        
+            if(isset($_FILES['image'])){
+                $file = $_FILES['image']['tmp_name'];
+                if(!isset($file)){
+                    echo "Please select an image.";
+                }
+                else{
+                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                    $image_name = addslashes($_FILES['image']['name']);
+                    $image_size = getimagesize($_FILES['image']['tmp_name']);
+
+                    $this->load->model('barangModel');
+                    $this->barangModel->insert($userid, $nama_barang, $jenis_barang, $lokasi_barang, $tanggal, $waktu, $deskripsi);
+                    $this->barangModel->upload_photo($image, $image_name);
+                
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                    
+                    
+                    $this->tambah();  
+                
+                }            
+            }  
+        
+        }
+    }     
     
     public function account() {
         $this->load->helper('security');

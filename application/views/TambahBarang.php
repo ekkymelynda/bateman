@@ -267,6 +267,11 @@
 <script src="<?php echo base_url(); ?>assets/_include/js/jasny-bootstrap.js"></script> <!-- photo -->
 <script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
+<script>
+$(document).ready(function(){
+    $(".alert").addClass("in").fadeOut(20000);
+});    
+</script>
 <!-- End Js -->
 
 </body>

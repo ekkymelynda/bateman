@@ -19,7 +19,6 @@
           <table class="table table-hover dataTable table-striped width-full" data-plugin="dataTable">
             <thead>
               <tr>
-                <th>ID</th>
                 <th>Nama</th>
                 <th>Email</th>
                 <th>Password</th>
@@ -32,7 +31,6 @@
             <tbody>
               <?php foreach ($h->result() as $row){?>
               <tr>
-                 <td><?php echo $row->ID_PGN;?></td>
                  <td><?php echo $row->NAMA_PGN;?></td>
                  <td><?php echo $row->EMAIL_PGN;?></td>
                  <td type=>*****</td>

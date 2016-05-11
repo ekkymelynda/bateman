@@ -19,32 +19,20 @@
                   <?php foreach ($h->result() as $row){?>
                   <form class="form-horizontal" id="exampleStandardForm2" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
                     <div class="form-group">
-                      <label class="control-label"><b>Pengguna</b></label>
-                          <select class="form-control" name="id_png" required="off">
-                              <option value="<?php echo $row->ID_PGN;?>"><?php echo $row->ID_PGN;?></option>
-                              <option value="">A</option>
-                              <option value="">B</option>
-                              <option value="">C</option>
-                              <option value="">D</option>
-                              <option value="">E</option>
-                              <option value="">F</option>
-                          </select>
-                    </div>
-                    <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_brg"
                         value="<?php echo $row->NAMA_BRG;?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label"><b>Jenis</b></label>
-                          <select class="form-control" name="jenis_brg" required="off">
-                              <option value="<?php echo $row->JENIS_BARANG;?>"><?php echo $row->JENIS_BARANG;?></option>
-                              <option value="">A</option>
-                              <option value="">B</option>
-                              <option value="">C</option>
-                              <option value="">D</option>
-                              <option value="">E</option>
-                              <option value="">F</option>
+                          <select class="form-control" name="id_jenis" required="off">
+                              <option value="<?php echo $row->ID_JENIS;?>"><?php echo $row->ID_JENIS;?></option>
+                              <option value="1">Elektronik</option>
+                              <option value="2">Device</option>
+                              <option value="3">Alat Tulis</option>
+                              <option value="4">Aksesoris</option>
+                              <option value="5">Pakaian</option>
+                              <option value="6">Lain - lain</option>
                           </select>
                     </div>
                     <div class="form-group">

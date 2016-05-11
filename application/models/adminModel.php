@@ -83,11 +83,11 @@ class adminModel extends CI_Model {
     }
 
 
-    public function ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
+    public function ubah_barang($id_brg, $nama_brg, $id_jenis, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
     {
         $data = array(
             'nama_brg' => $nama_brg,
-            'jenis_brg' => $jenis_brg,
+            'id_jenis' => $id_jenis,
             'tglpost_brg' => $tglpost_brg,
             'lokasi_brg' => $lokasi_brg,
             'deskripsi_brg' => $deskripsi_brg,

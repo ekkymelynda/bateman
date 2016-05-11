@@ -125,13 +125,15 @@ class dashboard extends CI_Controller {
                     echo "Please select an image.";
                 }
                 else{
-                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
-                    $image_name = addslashes($_FILES['image']['name']);
-                    $image_size = getimagesize($_FILES['image']['tmp_name']);
 
                     $this->load->model('barangModel');
                     $this->barangModel->insert($userid, $nama_barang, $jenis_barang, $lokasi_barang, $tanggal, $waktu, $deskripsi);
-                    $this->barangModel->upload_photo($image, $image_name);
+                    if($_FILES['image']['tmp_name']){
+                        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                        $image_name = addslashes($_FILES['image']['name']);
+                        $image_size = getimagesize($_FILES['image']['tmp_name']);                    
+                        $this->barangModel->upload_photo($image, $image_name);
+                    }                    
                 
             /*        $newdata = array(
                         'name'  => $nama,
@@ -175,13 +177,15 @@ class dashboard extends CI_Controller {
                     echo "Please select an image.";
                 }
                 else{
-                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
-                    $image_name = addslashes($_FILES['image']['name']);
-                    $image_size = getimagesize($_FILES['image']['tmp_name']);
-
                     $this->load->model('userModel');
                     $this->userModel->update($userid, $nama_pgn, $email_pgn, $pswd_pgn, $alamat_pgn, $notlp_pgn);
-                    $this->userModel->upload_photo($image, $image_name, $userid);
+
+                    if($_FILES['image']['tmp_name']){
+                        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                        $image_name = addslashes($_FILES['image']['name']);
+                        $image_size = getimagesize($_FILES['image']['tmp_name']);                    
+                        $this->userModel->upload_photo($image, $image_name, $userid);
+                    }
                 
             /*        $newdata = array(
                         'name'  => $nama,
@@ -228,13 +232,15 @@ class dashboard extends CI_Controller {
                     echo "Please select an image.";
                 }
                 else{
-                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
-                    $image_name = addslashes($_FILES['image']['name']);
-                    $image_size = getimagesize($_FILES['image']['tmp_name']);
 
                     $this->load->model('barangModel');
                     $this->barangModel->update($userid, $id_brg, $nama_brg, $waktupost_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $id_jenis);
-                    $this->barangModel->update_photo($image, $image_name, $userid, $id_brg);
+                    if($_FILES['image']['tmp_name']){
+                        $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                        $image_name = addslashes($_FILES['image']['name']);
+                        $image_size = getimagesize($_FILES['image']['tmp_name']);                    
+                        $this->barangModel->update_photo($image, $image_name, $userid, $id_brg);
+                    }                    
                 
             /*        $newdata = array(
                         'name'  => $nama,

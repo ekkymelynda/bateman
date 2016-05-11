@@ -125,10 +125,10 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
+                <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
 				<li><a href="<?php echo base_url(); ?>dashboard/user" class="external" >Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
-                <li class="current"><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
-                <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
+                <li class="current"><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>        
                 <li><a href="<?php echo base_url(); ?>dashboard/logout" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
@@ -191,7 +191,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
-                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
                                                               <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
@@ -210,7 +211,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
-                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
@@ -229,7 +231,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
-                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
                                                               <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
@@ -273,7 +276,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
-                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
                                                               <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
@@ -292,7 +296,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
-                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>class='tandaiedit' 
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>class='tandaiedit' 
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
                                                               <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>

@@ -1,12 +1,13 @@
 <?php
 
 class dashboardModel extends CI_Model {
-    public function insert($nama, $email, $password){
+    public function insert($nama, $email, $password, $alamat){
         date_default_timezone_set("Asia/Jakarta"); 
         $data = array (
             'NAMA_PGN' => $nama,
             'EMAIL_PGN' => $email,
-            'PSWD_PGN' => $password
+            'PSWD_PGN' => $password,
+            'ALAMAT_PGN' => alamat
             //'user_register'=>date("Y-m-d h:i:sa"),
             //'user_last_login'=>date("Y-m-d h:i:sa")
             //'user_jumlah_post'=>0,
@@ -38,7 +39,7 @@ class dashboardModel extends CI_Model {
 
     public function loginUser($username, $pass){
         date_default_timezone_set("Asia/Jakarta");
-        $this->db->select('NAMA_PGN, EMAIL_PGN, PSWD_PGN, ID_PGN');
+        $this->db->select('NAMA_PGN, EMAIL_PGN, PSWD_PGN, ID_PGN, FOTO_PGN');
         $this->db->from('pengguna');
         $this->db->where('EMAIL_PGN', $username);
         $this->db->where('PSWD_PGN', $pass);
@@ -54,7 +55,8 @@ class dashboardModel extends CI_Model {
             $newdata = array(
             'username'  => $username,
             'userid' => $idid[0]->ID_PGN,
-            'name' => $idid[0]->NAMA_PGN
+            'name' => $idid[0]->NAMA_PGN,
+            'foto' => $idid[0]->FOTO_PGN  
             );
             $this->session->set_userdata($newdata);
 

@@ -259,6 +259,7 @@ class dashboard extends CI_Controller {
             $email = $this->input->post('email');
             $password = $this->input->post('password');
             $confirm_password = $this->input->post('confirm_password');
+            $alamat = $this->input->post('alamat');
             
             if(isset($_FILES['image'])){
                 $file = $_FILES['image']['tmp_name'];
@@ -271,7 +272,7 @@ class dashboard extends CI_Controller {
                     $image_size = getimagesize($_FILES['image']['tmp_name']);
 
                     $this->load->model('dashboardModel');
-                    $this->dashboardModel->insert($nama, $email, $password);
+                    $this->dashboardModel->insert($nama, $email, $password, $alamat);
                     $this->dashboardModel->upload_photo($image, $image_name);
                     
                     $newdata = array(

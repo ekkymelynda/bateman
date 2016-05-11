@@ -202,7 +202,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -222,7 +223,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -242,7 +244,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -262,7 +265,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br> 
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -282,7 +286,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -302,7 +307,8 @@ if(validation_errors()!=NULL){
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -513,7 +519,11 @@ if(validation_errors()!=NULL){
                             <div style="float: left; width: 55%;">
                                 Email:<br>
                                     <input type="text" name="email" id="email" placeholder="Email" value="<?php echo set_value('email'); ?>" required>&nbsp;&nbsp;&nbsp;&nbsp;<span id="email_verify" class="verify" style="display:inline-block; width:16px; height:16px;"></span><br>
-                            </div>                           
+                            </div>
+                            <div style="float: left; width: 55%;">
+                                Alamat:<br>
+                                <textarea type="text" name="alamat" placeholder="Alamat"></textarea><br>
+                            </div>                            
                             <div style="float: left; width: 55%;">
                                 Password:<br>
                                     <input type="password" name="password" id="password" placeholder="Password" value="<?php echo set_value('password'); ?>" required>&nbsp;&nbsp;&nbsp;&nbsp;<span id="password_verify" class="verify" style="display:inline-block; width:16px; height:16px;"></span><br>
@@ -521,7 +531,7 @@ if(validation_errors()!=NULL){
                             <div style="float: left; width: 55%;">
                                 Konfirmasi Password:<br>
                                     <input type="password" name="confirm_password" placeholder="Konfirmasi Password"><br>
-                            </div>
+                            </div>                          
                      <!--       <div class="form-group">
                               <button class="btn btn-primary btn btn-block">OK</button>
                             </div> -->

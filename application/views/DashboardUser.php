@@ -5,6 +5,7 @@
         /*echo $_SESSION['username'];
         echo $_SESSION['userid'];
         echo $_SESSION['name'];*/
+        $foto = $_SESSION['foto'];
     }
     else{
         //header("Location:../dashboard/index");
@@ -131,15 +132,15 @@
         <div id="logo">
         	<a id="goUp" href="#home-slider"></a>
         </div>
-        
+
         <nav id="menu">
         	<ul id="menu-nav">
                 <!-- <li class="current"><a href="#work">Beranda</a></li> -->
+                <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
                 <li><a href="#work">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <!--<li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li> -->
-                <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/logout" class="external" >Keluar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
             </ul>
@@ -203,7 +204,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -223,7 +225,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -243,7 +246,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -263,7 +267,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>P
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -283,7 +288,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.'<br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     
@@ -303,7 +309,8 @@
                                                     <!-- Thumb Image and Description -->
                                                     <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'" 
                                                          alt="Lokasi ditemukan di '.$barangs->LOKASI_BRG.'<br>
-                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
+                                                              Tanggal ditemukan '.$barangs->TGLPOST_BRG.' <br>
+                                                              Pada '.$barangs->WAKTUPOST_BRG.' WIB<br>
                                                               Ditemukan oleh '.$barangs->NAMA_PGN.'<br>
                                                               Kontak '.$barangs->NOTLP_PGN.'">
                                             </li>                                     

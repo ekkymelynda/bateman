@@ -91,7 +91,7 @@
 
       <footer class="page-copyright">
         <p>WEBSITE oleh Kelompok 8</p>
-        <p>© 2016. Sistem Informasi Barang Temuan.</p>
+        <p>© 2016. <a href="<?php echo base_url() ?>">Sistem Informasi Barang Temuan.</a></p>
         
       </footer>
     </div>

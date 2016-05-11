@@ -203,7 +203,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -221,7 +221,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -239,7 +239,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -257,7 +257,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -275,7 +275,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -293,7 +293,7 @@ if(validation_errors()!=NULL){
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='dashboard/lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>

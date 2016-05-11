@@ -137,7 +137,7 @@
         	<ul id="menu-nav">
                 <!-- <li class="current"><a href="#work">Beranda</a></li> -->
                 <li><a href="<?php echo base_url(); ?>dashboard/editprofil" class="external" >Profil</a></li>
-                <li><a href="#work">Beranda</a></li>
+                <li class="current"><a href="#work">Beranda</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/tambah" class="external">Tambah Temuan</a></li>
                 <li><a href="<?php echo base_url(); ?>dashboard/temuan" class="external" >Temuan Anda</a></li>
                 <!--<li><a href="#filter" data-toggle="modal" data-target="#edit-profil">Profil</a></li> -->
@@ -205,7 +205,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -223,7 +223,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -241,7 +241,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -259,7 +259,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -277,7 +277,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>
@@ -295,7 +295,7 @@
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
-                                                              Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                             </li>                                     
                             <?php    } ?>

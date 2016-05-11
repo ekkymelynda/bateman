@@ -54,6 +54,13 @@ class dashboard extends CI_Controller {
         $this->load->view('TambahBarang.php');
     }
     
+    public function lihatprofil($id)
+    {
+        $this->load->model('userModel');
+        $this->data['user'] = $this->userModel->datauser($id);
+    	$this->load->view('LihatProfil.php', $this->data);
+    }    
+    
     public function editbarang($id_barang)
     {
         $this->load->model('barangModel');

@@ -1438,3 +1438,11 @@ footer .credits {
     margin-top: -6px;
     margin-right: -40px;
 }
+
+.altuser {
+    color: #7f8289;
+}
+
+.altuser:hover {
+    color: #FFEB21;
+}

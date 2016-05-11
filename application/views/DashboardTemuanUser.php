@@ -309,7 +309,7 @@
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <a href="#">Barang Temuan Teknik Informatika ITS</a> oleh <a href="#">Bateman Team</a></p>
+	<p class="credits">&copy;IMK 2016. <a href="#">Barang Temuan Teknik Informatika ITS</a> oleh <a href="#">Kelompok 8 IMK C - BATEMAN</a></p>
 </footer>
 <!-- End Footer -->
 

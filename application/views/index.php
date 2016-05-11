@@ -346,18 +346,18 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Manejer<br> Proyek</span>
+                    <span class="overlay-text-thumb">Manajer<br>Proyek</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-01.jpg" alt="Divi Jaya">
             </div>
-            <h3 class="profile-name">Divi Jaya</h3>
+            <h3 class="profile-name" style="text-align:center">Divi Jaya</h3>
 
             <!-- <p class="profile-description">Saya merasa sedih melihat keadaan tempat penampungan barang temuan yang ada di Laboratorium Teknik Informatika ITS. 
 			Terakhir saya lihat tempatnya hanya sebuah kotak kardus atau toples bekas yang tidak terawat. Akhirnya saya dan teman-teman memiliki ide untuk membuat sebuah aplikasi berbasis web 
 			yang khusus untuk menampung informasi mengenai barang temuan tersebut. Dari ide itulah lahir Bateman.</p> -->
             	
             <div class="social">
-            	<ul class="social-icons">
+            	<ul style="text-align:center" class="social-icons">
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
@@ -374,13 +374,13 @@ if(validation_errors()!=NULL){
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-02.jpg" alt="Putro Satrio">
             </div>
-            <h3 class="profile-name">Putro Satrio</h3>
+            <h3 style="text-align:center" class="profile-name">Putro Satrio</h3>
           <!--  <p class="profile-description">Dulu saya pernah lupa membawa pulang harddisk external yang saya miliki. Pdahal banyak file-file penting yang ada di dalamnya.
 			Suatu ketika saya coba menanyakan barang saya kepada Administrator Lab dan mencoba mencari barang milik saya, namun barang saya tidak ada dimanapun. Beruntung suatu 
 			ketika teman saya mengabarkan bahwa barang milik saya tersebut dibawa olehnya. Oleh karena itu, saat teman saya mengajak mengerjakan proyek Bateman, saya menyetujuinya tanpa keraguan sedikitpun.</p> -->
             	
             <div class="social">
-            	<ul class="social-icons">
+            	<ul style="text-align:center" class="social-icons">
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
@@ -393,16 +393,16 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Designer<br> Web</span>
+                    <span class="overlay-text-thumb">Desainer<br>Web</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-03.jpg" alt="Ekky Melinda">
             </div>
-            <h3 class="profile-name">Ekky Melynda</h3>
+            <h3 style="text-align:center" class="profile-name">Ekky Melynda</h3>
         <!--    <p class="profile-description">Kata Bateman lahir dari ide yang dicetuskan PM kami saat menyaksikan Film Superhero Batman. Bateman adalah singkatan dari Barang Temuan 
 			dengan logo yang merupakan representasi Batman itu sendiri. Kami berharap Bateman dapat menjadi Superhero yang mampu menghubungkan Anda dengan barang milik Anda.</p> -->
             	
             <div class="social">
-            	<ul class="social-icons">
+            	<ul style="text-align:center" class="social-icons">
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
@@ -415,16 +415,16 @@ if(validation_errors()!=NULL){
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Database Administrator</span>
+                    <span class="overlay-text-thumb">Administrator Database</span>
                 </div>
                 <img src="<?php echo base_url(); ?>assets/_include/img/profile/profile-04.jpg" alt="Ken Genesius">
             </div>
-            <h3 class="profile-name">Ken Genesius</h3>
+            <h3 style="text-align:center" class="profile-name">Ken Genesius</h3>
     <!--        <p class="profile-description">Superhero sejati tidak selalu lahir dengan kemampuan super atau semacamnya. Superhero sejati juga bisa lahir 
 			dari tangan-tangan kecil kami. Seperti Bateman, yang lahir dengan cara sederhana, namun mampu memberikan manfaat yang cukup istimewa. Terima kasih Bateman!</p>-->
             	
             <div class="social">
-            	<ul class="social-icons">
+            	<ul style="text-align:center" class="social-icons">
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
                     <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
@@ -441,7 +441,7 @@ if(validation_errors()!=NULL){
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Bateman Team</span></a></p>
+	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Kelompok 8 IMK C - BATEMAN</span></a></p>
 </footer>
 <!-- End Footer -->
 
@@ -467,7 +467,7 @@ if(validation_errors()!=NULL){
                     <div class="tab-pane fade in active" id="tab1">
                         <form action="<?php echo base_url(); ?>dashboard/checkLoginUser" name="loginuser" id="loginuser" method="POST" enctype="multipart/form-data">
                             <span style="font-size: 1.2em; float: left;">Email</span>
-                                <input type="text" name="email" placeholder="email" style="float: right; width: 70%;"><br>
+                                <input type="text" name="email" placeholder="Email" style="float: right; width: 70%;"><br>
                             <span style="font-size: 1.2em; float: left; margin-top: 3%;">Password</span>
                                 <input type="password" name="password" placeholder="Password" style="float: right; width: 70%;">
                         </form>  

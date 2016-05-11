@@ -251,7 +251,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>
@@ -347,7 +347,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="tandaibarang/<?php echo $barangs->ID_BRG ?>">OK</a>
+        <a type="button" id="barangid" class="btn btn-default" href="tandaibarang/<?php echo $barangs->ID_BRG ?>">OK</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>

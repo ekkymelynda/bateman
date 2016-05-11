@@ -1,6 +1,6 @@
 <?php
     error_reporting(E_ALL & ~E_NOTICE);
-    if($_SESSION['username']){
+    if($_SESSION['adminusername']){
         /*echo $_SESSION['username'];
         echo $_SESSION['userid'];
         echo $_SESSION['name'];*/

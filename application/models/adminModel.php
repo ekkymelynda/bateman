@@ -55,14 +55,14 @@ class adminModel extends CI_Model {
             $data = array();
 
             $newdata = array(
-            'username'  => $username,
+            'adminusername'  => $username,
             'adminid' => $idid[0]->ID_ADM,
-            'name' => $idid[0]->NAMA_ADM,
-            'email' => $idid[0]->EMAIL_ADM,
-            'pass' => $idid[0]->PSWD_ADM,
-            'alamat' => $idid[0]->ALAMAT_ADM, 
-            'telp' => $idid[0]->NOTLP_ADM, 
-            'foto' => $idid[0]->FOTO_ADM
+            'adminname' => $idid[0]->NAMA_ADM,
+            'adminemail' => $idid[0]->EMAIL_ADM,
+            'adminpass' => $idid[0]->PSWD_ADM,
+            'adminalamat' => $idid[0]->ALAMAT_ADM, 
+            'admintelp' => $idid[0]->NOTLP_ADM, 
+            'adminfoto' => $idid[0]->FOTO_ADM
             );
             $this->session->set_userdata($newdata);
 

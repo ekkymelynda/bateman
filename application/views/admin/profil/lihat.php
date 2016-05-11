@@ -25,27 +25,27 @@
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <br>
-                        <label><?php echo $_SESSION['name']; ?></label>
+                        <label><?php echo $_SESSION['adminname']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
                       <br>
-                      <label><?php echo $_SESSION['email']; ?></label>
+                      <label><?php echo $_SESSION['adminemail']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Password</b></label>
                       <br>
-                      <label><?php echo $_SESSION['pass']; ?></label>
+                      <label><?php echo $_SESSION['adminpass']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Alamat</b></label>
                       <br>
-                      <label><?php echo $_SESSION['alamat']; ?></label>
+                      <label><?php echo $_SESSION['adminalamat']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>No Telp</b></label>
                       <br>
-                      <label><?php echo $_SESSION['telp']; ?></label>
+                      <label><?php echo $_SESSION['admintelp']; ?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>

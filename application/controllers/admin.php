@@ -93,12 +93,12 @@ class admin extends CI_Controller {
             $this->adminModel->ubahAdmin($userid, $nama_adm, $email_adm, $pswd_adm, $alamat_adm, $notlp_adm);
 
             $newdata = array(
-            'userid' => $userid,
-            'name' => $nama_adm,
-            'email' => $email_adm,
-            'pass' => $pswd_adm,
-            'alamat' => $alamat_adm, 
-            'telp' => $notlp_adm, 
+            'adminid' => $userid,
+            'adminname' => $nama_adm,
+            'adminemail' => $email_adm,
+            'adminpass' => $pswd_adm,
+            'adminalamat' => $alamat_adm, 
+            'admintelp' => $notlp_adm, 
             );
             $this->session->set_userdata($newdata);
             if(!empty($_FILES['image']['tmp_name']))
@@ -114,8 +114,8 @@ class admin extends CI_Controller {
 
                     //$this->load->model('barangModel');
                     $this->adminModel->ubah_foto_admin($userid, $image, $image_name);
-                    $this->session->unset_userdata('foto');
-                    $this->session->set_userdata('foto',$image);
+                    $this->session->unset_userdata('adminfoto');
+                    $this->session->set_userdata('adminfoto',$image);
             /*        $newdata = array(
                         'name'  => $nama,
                     );

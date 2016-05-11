@@ -21,32 +21,32 @@
                       <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_adm"
-                        value="<?php echo $_SESSION['name']; ?>" autocomplete="off" />
+                        value="<?php echo $_SESSION['adminname']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Email</b></label>
                       <input type="email" class="form-control" id="inputBasicEmail" name="email_adm"
-                      value="<?php echo $_SESSION['email']; ?>" autocomplete="off" />
+                      value="<?php echo $_SESSION['adminemail']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Password</b></label>
                       <input type="password" class="form-control" id="inputBasicEmail" name="pswd_adm"
-                      value="<?php echo $_SESSION['pass']; ?>" autocomplete="off" />
+                      value="<?php echo $_SESSION['adminpass']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>Alamat</b></label>
                       <input type="text" class="form-control" id="inputBasicEmail" name="alamat_adm"
-                      value="<?php echo $_SESSION['alamat']; ?>" autocomplete="off" />
+                      value="<?php echo $_SESSION['adminalamat']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicEmail"><b>No Telp</b></label>
                       <input type="text" class="form-control" id="inputBasicEmail" name="notlp_adm"
-                      value="<?php echo $_SESSION['telp']; ?>" autocomplete="off" />
+                      value="<?php echo $_SESSION['admintelp']; ?>" autocomplete="off" />
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" height="128px">'; ?>
+                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['adminfoto']).'" width="128px" height="128px">'; ?>
                       <label></label>
                       <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                         <div class="fileinput" data-trigger="fileinput" ></div>

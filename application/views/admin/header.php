@@ -94,7 +94,7 @@
 
   <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
 
-    <div class="navbar-header">
+    <div class="navbar-header" style="background-color: #FFEB21">
       <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
       data-toggle="menubar">
         <span class="sr-only">Toggle navigation</span>
@@ -110,7 +110,7 @@
         <i class="icon wb-search" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="">
-        <span class="navbar-brand-text">BATEMAN</span>
+        <span style="color: #2F3238" class="navbar-brand-text">BATEMAN</span>
       </div>
     </div>
 

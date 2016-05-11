@@ -147,14 +147,14 @@
               <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="uikit">
                 <i class="site-menu-icon wb-home" aria-hidden="true"></i>
-                <span class="site-menu-title">Profil Pengguna</span>
+                <span class="site-menu-title">Profil</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/profil_lihat" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
+                    <span class="site-menu-title">Lihat Profil</span>
                   </a>
                 </li>
               </ul>
@@ -162,7 +162,7 @@
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/profil_ubah" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Ubah</span>
+                    <span class="site-menu-title">Ubah Profil</span>
                   </a>
                 </li>
               </ul>
@@ -177,13 +177,13 @@
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/admin_buat" data-slug="uikit-buttons">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Buat</span>
+                    <span class="site-menu-title">Buat Baru</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/lihatAdmin" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
+                    <span class="site-menu-title">Daftar Admin</span>
                   </a>
                 </li>
               </ul>
@@ -198,7 +198,7 @@
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/lihatPengguna" data-slug="advanced-animation">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
+                    <span class="site-menu-title">Daftar Pengguna</span>
                   </a>
                 </li>
               </ul>
@@ -213,7 +213,7 @@
                 <li class="site-menu-item">
                   <a class="animsition-link" href="<?php echo base_url(); ?>admin/lihatBarang" data-slug="uikit-colors">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
+                    <span class="site-menu-title">Daftar Barang</span>
                   </a>
                 </li>
               </ul>

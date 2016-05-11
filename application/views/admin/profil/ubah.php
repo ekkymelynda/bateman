@@ -1,10 +1,10 @@
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Ubah Data Profil</h1>
+      <h1 class="page-title">Ubah Profil</h1>
       <ol class="breadcrumb">
         <li>Profil</li>
-        <li>Ubah</li>
+        <li>Ubah Profil</li>
       </ol>
     </div>
     <div class="page-content">
@@ -14,7 +14,7 @@
             <div class="col-sm-6">
               <!-- Example Basic Form -->
               <div class="example-wrap">
-                <h4 class="example-title">Ubah Data Profil</h4>
+                <h4 class="example-title">Form Data Profil</h4>
                 <div class="example">
                   <form class="form-group" name="adminForm" id="exampleStandardForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/updateAdmin" method="post">
                     </div>

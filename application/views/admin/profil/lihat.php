@@ -1,10 +1,10 @@
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Lihat Data Profil</h1>
+      <h1 class="page-title">Lihat Profil</h1>
       <ol class="breadcrumb">
         <li>Profil</li>
-        <li>Lihat</li>
+        <li>Lihat Profil</li>
       </ol>
     </div>
 
@@ -15,7 +15,7 @@
             <div class="col-sm-6">
               <!-- Example Basic Form -->
               <div class="example-wrap">
-                <h4 class="example-title">Lihat Data Profil</h4>
+                <h4 class="example-title">Data Profil</h4>
                 <div class="example">
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>ID</b></label>

@@ -1,10 +1,10 @@
   <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">Buat Data Admin</h1>
+      <h1 class="page-title">Buat Admin Baru</h1>
       <ol class="breadcrumb">
-        <li>Admin</li>
-        <li>Buat</li>
+        <li>Data Admin</li>
+        <li>Buat Baru</li>
       </ol>
     </div>
     <div class="page-content">
@@ -14,7 +14,7 @@
             <div class="col-sm-6">
               <!-- Example Basic Form -->
               <div class="example-wrap">
-                <h4 class="example-title">Buat Data Admin</h4>
+                <h4 class="example-title">Form Data Admin</h4>
                 <div class="example">
                   <form autocomplete="off" name="buatAdminForm" id="exampleStandardForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/buatAdmin" method="post">
                     <div class="form-group">

@@ -139,7 +139,7 @@ class dashboard extends CI_Controller {
                     $this->session->set_userdata($newdata);    */                
                     
                     
-                    $this->editprofil();  
+                    $this->tambah();  
                 
                 }            
             }  

@@ -36,7 +36,12 @@
                  <td type=>*****</td>
                  <td><?php echo $row->ALAMAT_PGN;?></td>
                  <td><?php echo $row->NOTLP_PGN;?></td>
+                  <?php if($row->FOTO_PGN != NULL) {?>
                  <td><?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_PGN).'"/></a>';?></td>
+                <?php  } ?>
+                  <?php if($row->FOTO_PGN == NULL) {?>
+                 <td><?php echo '<a href="#"><img width="128px" height="128px" src="'.base_url().'/assets/images/useradmin.png"/></a>';?></td>  
+                 <?php } ?>                  
                  <td><?php echo $row->NAMA_FOTO;?></td>
               <tr>
               <?php }?>

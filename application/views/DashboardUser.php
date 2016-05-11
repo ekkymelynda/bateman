@@ -193,9 +193,35 @@
                                 foreach($barang as $barangs){?>
                                  <?php   if($barangs->ID_JENIS == '1' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
-                                            <li class="item-thumbs span3 image-wrap clothes">
+                                            <li class="item-thumbs span3 image-wrap accecories">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                           <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
+                                                        <span class="overlay-img"></span>
+                                                        <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
+                                                        <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
+                                                    </a>
+                                                    <!-- Thumb Image and Description -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>                                          <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
@@ -211,92 +237,167 @@
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '2' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
-                                            <li class="item-thumbs span3 image-wrap clothes">
+                                            <li class="item-thumbs span3 image-wrap notetools">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
                                                     </a>
                                                     <!-- Thumb Image and Description -->
-                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?> 
                                             </li>                                     
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '3' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
-                                            <li class="item-thumbs span3 image-wrap clothes">
+                                            <li class="item-thumbs span3 image-wrap device">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
                                                     </a>
                                                     <!-- Thumb Image and Description -->
-                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?> 
                                             </li>                                     
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '4' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
-                                            <li class="item-thumbs span3 image-wrap clothes">
+                                            <li class="item-thumbs span3 image-wrap electronics">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
                                                     </a>
                                                     <!-- Thumb Image and Description -->
-                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?> 
                                             </li>                                     
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '5' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
                                             <li class="item-thumbs span3 image-wrap clothes">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
                                                     </a>
                                                     <!-- Thumb Image and Description -->
-                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?> 
                                             </li>                                     
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '6' && $barangs->TANDAI_BRG == 'BELUM')
                                     {?>
-                                            <li class="item-thumbs span3 image-wrap clothes">
+                                            <li class="item-thumbs span3 image-wrap other">
                                                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
+                                                <?php } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
                                                         <span class="overlay-text-thumb" style="width: 80%; padding-left: 10%; padding-right: 10%;"><?php echo $barangs->NAMA_BRG ?></span>
                                                     </a>
                                                     <!-- Thumb Image and Description -->
-                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px; 
+                                                <?php if($barangs->FOTO_BRG != NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG)?>" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>
+                                                <?php if($barangs->FOTO_BRG == NULL) { ?>
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                         alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
+                                                              Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
+                                                              Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
+                                                              Ditemukan oleh <a class='altuser' href='lihatprofil/<?php echo $barangs->ID_PGN ?>'><?php echo $barangs->NAMA_PGN ?></a><br>
+                                                              Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
+                                                <?php    } ?>        
                                             </li>                                     
                             <?php    } ?>
                 <?php         }  ?>

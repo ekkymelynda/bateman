@@ -50,7 +50,12 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['adminfoto']).'" width="128px" hight="128px">'; ?>
+                  <?php if($_SESSION['adminfoto'] != NULL) {?>
+                 <td><?php echo '<img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $_SESSION['adminfoto']).'"/></a>';?></td>
+                <?php  } ?>
+                  <?php if($_SESSION['adminfoto'] == NULL) {?>
+                 <td><?php echo '<img width="128px" height="128px" src="'.base_url().'/assets/images/useradmin.png"/></a>';?></td>  
+                 <?php } ?>                        
                       <br>
                       <label></label>
                     </div>

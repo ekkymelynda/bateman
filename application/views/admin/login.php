@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Sistem Informasi Barang Temuan</title>
+  <title>Bateman | Barang Temuan Teknik Informatika ITS</title>
 
   <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/images/bateman.png">
   <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/bateman.png">

@@ -52,7 +52,15 @@ class dashboard extends CI_Controller {
     public function tambah()
     {
         $this->load->view('TambahBarang.php');
-    }  
+    }
+    
+    public function editbarang($id_barang)
+    {
+        $this->load->model('barangModel');
+        $id = $_SESSION['userid'];
+        $this->data['barang'] = $this->barangModel->databarang($id_barang);
+        $this->load->view('EditBarang.php', $this->data);
+    }     
 
     public function checkLoginUser() {
         //$this->load->helper('security');
@@ -124,7 +132,7 @@ class dashboard extends CI_Controller {
                     $this->session->set_userdata($newdata);    */                
                     
                     
-                    $this->tambah();  
+                    $this->editprofil();  
                 
                 }            
             }  
@@ -135,23 +143,24 @@ class dashboard extends CI_Controller {
     public function editPenggunaProfil()
     {
         $this->load->helper('security');
-        $this->form_validation->set_rules('nama_barang','Nama_Barang','required');
-        $this->form_validation->set_rules('jenis_barang','Jenis_Barang','required');
-        $this->form_validation->set_rules('lokasi_barang','Lokasi_Barang','required');
-        $this->form_validation->set_rules('deskripsi_barang','Deskripsi_Barang','required');
+        $this->form_validation->set_rules('nama_pengguna','Nama_Pengguna','required');
+        $this->form_validation->set_rules('email','Email','required');
+        $this->form_validation->set_rules('password','Password','required');
+        $this->form_validation->set_rules('no_telpon','No_Telpon','required');
+        $this->form_validation->set_rules('alamat','Alamat','required');
         
         if($this->form_validation->run() == false){
             $this->form_validation->set_message('Incorrect Data.');
-            $this->tambah();
+            $this->editprofil();
         }
         else {
-            $userid = $this->input->post('user_id');
-            $nama_barang = $this->input->post('nama_barang');
-            $jenis_barang = $this->input->post('jenis_barang');
-            $lokasi_barang = $this->input->post('lokasi_barang');
-            $tanggal = $this->input->post('tanggal');
-            $waktu = $this->input->post('waktu');
-            $deskripsi = $this->input->post('deskripsi_barang');
+            $userid = $_SESSION['userid'];
+            $nama_pgn = $this->input->post('nama_pengguna');
+            $email_pgn = $this->input->post('email');
+            $pswd_pgn = $this->input->post('password');
+            $alamat_pgn = $this->input->post('alamat');
+            //$waktu = $this->input->post('waktu');
+            $notlp_pgn = $this->input->post('no_telpon');
         
             if(isset($_FILES['image'])){
                 $file = $_FILES['image']['tmp_name'];
@@ -163,9 +172,9 @@ class dashboard extends CI_Controller {
                     $image_name = addslashes($_FILES['image']['name']);
                     $image_size = getimagesize($_FILES['image']['tmp_name']);
 
-                    $this->load->model('barangModel');
-                    $this->barangModel->insert($userid, $nama_barang, $jenis_barang, $lokasi_barang, $tanggal, $waktu, $deskripsi);
-                    $this->barangModel->upload_photo($image, $image_name);
+                    $this->load->model('userModel');
+                    $this->userModel->update($userid, $nama_pgn, $email_pgn, $pswd_pgn, $alamat_pgn, $notlp_pgn);
+                    $this->userModel->upload_photo($image, $image_name, $userid);
                 
             /*        $newdata = array(
                         'name'  => $nama,
@@ -173,13 +182,66 @@ class dashboard extends CI_Controller {
                     $this->session->set_userdata($newdata);    */                
                     
                     
-                    $this->tambah();  
+                    $this->editprofil();  
                 
                 }            
             }  
         
         }
-    }     
+    }
+    
+    public function updateBarang()
+    {
+        $this->load->helper('security');
+        $this->form_validation->set_rules('nama_barang','Nama_Barang','required');
+        $this->form_validation->set_rules('jenis_barang','Jenis_Barang','required');
+        $this->form_validation->set_rules('lokasi_barang','Lokasi_Barang','required');
+        $this->form_validation->set_rules('tanggal','Tanggal','required');
+        $this->form_validation->set_rules('waktu','Waktu','required');
+        $this->form_validation->set_rules('deskripsi_barang','Deskripsi_Barang','required');
+        
+        if($this->form_validation->run() == false){
+            $this->form_validation->set_message('Incorrect Data.');
+            $id_brg = $this->input->post('barang_id');
+            $this->editbarang($id_brg);
+        }
+        else {
+            $userid = $_SESSION['userid'];
+            $id_brg = $this->input->post('barang_id');
+            $nama_brg = $this->input->post('nama_barang');
+            $waktupost_brg = $this->input->post('waktu');
+            $tglpost_brg = $this->input->post('tanggal');
+            $lokasi_brg = $this->input->post('lokasi_barang');
+            //$waktu = $this->input->post('waktu');
+            $deskripsi_brg = $this->input->post('deskripsi_barang');
+            $id_jenis = $this->input->post('jenis_barang');
+            if(isset($_FILES['image'])){
+                $file = $_FILES['image']['tmp_name'];
+                if(!isset($file)){
+                    echo "Please select an image.";
+                }
+                else{
+                    $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                    $image_name = addslashes($_FILES['image']['name']);
+                    $image_size = getimagesize($_FILES['image']['tmp_name']);
+
+                    $this->load->model('barangModel');
+                    $this->barangModel->update($userid, $id_brg, $nama_brg, $waktupost_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $id_jenis);
+                    $this->barangModel->update_photo($image, $image_name, $userid, $id_brg);
+                
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                    
+                    
+                    $this->editbarang($id_brg);  
+                
+                }            
+            }  
+        
+        }
+    }    
     
     public function account() {
         $this->load->helper('security');
@@ -240,6 +302,10 @@ class dashboard extends CI_Controller {
         }
     }
 
+    public function tandaibarang() {
+        $this->load->model('barangModel');
+    }
+    
     public function logout(){
         $this->load->library('session');
         $this->load->view('logout');

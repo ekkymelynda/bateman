@@ -1419,3 +1419,15 @@ footer .credits {
     width: 50%;
     z-index: 10000;
 }
+
+.tandaiedit {
+    color: #FFFFFF;
+}
+
+.tandaiedit:hover {
+    color: #FFEB21;
+}
+
+.tandaiedit:active {
+    color: #FFFFFF;
+}

@@ -99,7 +99,16 @@
 
 </head>
 
-
+<?php
+if(validation_errors()!=NULL){
+    echo'
+    <div class="alert alert-info" style="color: white">
+        <button type="button" class="close" data-dismiss="alert">×</button>';
+            echo validation_errors();
+    echo '
+    </div>';
+}
+?>
 <body>
 
 <!-- This section is for Splash Screen -->

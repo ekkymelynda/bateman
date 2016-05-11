@@ -39,7 +39,16 @@ class barangModel extends CI_Model {
         $query=$this->db->query("SELECT DISTINCT barang.*, pengguna.* FROM barang, pengguna WHERE barang.ID_PGN = '$id' AND pengguna.ID_PGN = '$id'");
         return $query->result();
     }
-    
+    public function databarang($id){
+        $query=$this->db->query("SELECT * FROM barang WHERE ID_BRG = '$id'");
+        return $query->result();
+    }
+    public function update($userid, $id_brg, $nama_brg, $waktupost_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $id_jenis){
+        $this->db->query("UPDATE barang SET NAMA_BRG = '$nama_brg', WAKTUPOST_BRG = '$waktupost_brg', TGLPOST_BRG = '$tglpost_brg', LOKASI_BRG = '$lokasi_brg', DESKRIPSI_BRG = '$deskripsi_brg' WHERE ID_BRG='$id_brg' and ID_PGN='$userid'");
+    }
+    public function update_photo($image, $image_name, $userid, $id_brg){
+        $this->db->query("UPDATE barang SET FOTO_BRG = '$image', NAMA_FOTO = '$image_name' WHERE ID_BRG='$id_brg' and ID_PGN='$userid'");
+    }   
 }
 
 ?>

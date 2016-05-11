@@ -78,9 +78,12 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
 											{image : 'assets/_include/img/slider-images/image01.jpg', title : '<div style="font-size: 3.0em; font-family: Titillium Web, sans-serif">Selamat Datang di BATEMAN</div>', thumb : '', url : ''},
-											{image : 'assets/_include/img/slider-images/image02.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Tempat paling tepat</div><div style="margin-top: -180px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Untuk menemukan barang hilang di sekitar anda</div>', thumb : '', url : ''},
-											{image : 'assets/_include/img/slider-images/image04.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif"></div>', thumb : '', url : ''},
-											{image : 'assets/_include/img/slider-images/image03.jpg', title : '', thumb : '', url : ''}  
+											{image : 'assets/_include/img/slider-images/image01b.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Tempat paling tepat</div><div style="margin-top: -180px; font-size: 3.0em; font-family: Titillium Web, sans-serif">untuk menginformasikan barang temuan di sekitar Anda</div>', thumb : '', url : ''},
+											{image : 'assets/_include/img/slider-images/image02.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Anda bisa memotret barang yang Anda temukan</div>', thumb : '', url : ''},
+											{image : 'assets/_include/img/slider-images/image03.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Kemudian mempostingnya dalam BATEMAN</div>', thumb : '', url : ''}
+											{image : 'assets/_include/img/slider-images/image04.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Anda juga bisa mencari barang Anda yang hilang</div>', thumb : '', url : ''},
+											{image : 'assets/_include/img/slider-images/image05.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Menghubungi kontak orang yang menemukan barang milik Anda</div>', thumb : '', url : ''}
+											{image : 'assets/_include/img/slider-images/image06.jpg', title : '<div style="margin-top:  -30px; font-size: 3.0em; font-family: Titillium Web, sans-serif">Kemudian bertemu untuk mengambil barang milik Anda</div>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   

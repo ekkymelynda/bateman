@@ -190,7 +190,7 @@
                             <?php
                                 $base = base_url();
                                 foreach($barang as $barangs){
-                                    if($barangs->ID_JENIS == '1')
+                                    if($barangs->ID_JENIS == '1' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap accecories">
@@ -210,7 +210,7 @@
 
                                         ';
                                     }
-                                    if($barangs->ID_JENIS == '2')
+                                    if($barangs->ID_JENIS == '2' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap notetools">
@@ -230,7 +230,7 @@
 
                                         ';
                                     }
-                                    if($barangs->ID_JENIS == '3')
+                                    if($barangs->ID_JENIS == '3' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap device">
@@ -250,7 +250,7 @@
 
                                         ';
                                     }
-                                    if($barangs->ID_JENIS == '4')
+                                    if($barangs->ID_JENIS == '4' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap electronics">
@@ -270,7 +270,7 @@
 
                                         ';
                                     }
-                                    if($barangs->ID_JENIS == '5')
+                                    if($barangs->ID_JENIS == '5' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap clothes">
@@ -290,7 +290,7 @@
 
                                         ';
                                     }
-                                    if($barangs->ID_JENIS == '6')
+                                    if($barangs->ID_JENIS == '6' && $barangs->TANDAI_BRG == 'BELUM')
                                     {
                                         echo '
                                             <li class="item-thumbs span3 image-wrap other">

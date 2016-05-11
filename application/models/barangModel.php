@@ -10,7 +10,8 @@ class barangModel extends CI_Model {
             'TGLPOST_BRG' => $tanggal,
             'WAKTUPOST_BRG' => $waktu,
             'LOKASI_BRG' => $lokasi_barang,
-            'DESKRIPSI_BRG' => $deskripsi
+            'DESKRIPSI_BRG' => $deskripsi,
+            'TANDAI_BRG' => 'BELUM'
             //'user_register'=>date("Y-m-d h:i:sa"),
             //'user_last_login'=>date("Y-m-d h:i:sa")
             //'user_jumlah_post'=>0,
@@ -48,7 +49,10 @@ class barangModel extends CI_Model {
     }
     public function update_photo($image, $image_name, $userid, $id_brg){
         $this->db->query("UPDATE barang SET FOTO_BRG = '$image', NAMA_FOTO = '$image_name' WHERE ID_BRG='$id_brg' and ID_PGN='$userid'");
-    }   
+    }
+    public function tandai_barang($id_barang){
+        $this->db->query("UPDATE barang SET TANDAI_BRG = 'SUDAH' WHERE ID_BRG='$id_barang'");
+    }    
 }
 
 ?>

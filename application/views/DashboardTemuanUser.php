@@ -194,7 +194,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>                            
@@ -213,7 +213,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>
@@ -232,7 +232,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>
@@ -251,8 +251,14 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
+                                                              <?php if($barangs->TANDAI_BRG == 'BELUM') {?>
+                                                              <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
+                                                              <?php  } ?>
+                                                              <?php if($barangs->TANDAI_BRG == 'SUDAH') {?>
+                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;'>Sudah Ditandai</a>">
+                                                              <?php  } ?>                                                
+                                                
                                             </li>                                     
                             <?php    } ?>
                                  <?php   if($barangs->ID_JENIS == '5')
@@ -270,7 +276,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>
@@ -289,7 +295,7 @@
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?> pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>class='tandaiedit' 
                                                               Ditemukan oleh <?php echo $barangs->NAMA_PGN ?><br>
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>
-                                                              <a class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-target='#tandai-barang'>Tandai</a>
+                                                              <a id='tandai' class='tandaiedit' style='float: right; margin-top: -12px;' href='#filter' data-toggle='modal' data-id='<?php echo $barangs->ID_BRG ?>' data-target='#tandai-barang'>Tandai</a>
                                                               <a class='tandaiedit' style='float: right; margin-top: -12px; margin-right: 12px;' href='editbarang/<?php echo $barangs->ID_BRG ?>'>Edit</a>">
                                             </li>                                     
                             <?php    } ?>
@@ -347,7 +353,7 @@
                     </div>
       </div>
       <div class="modal-footer">
-        <a type="button" id="barangid" class="btn btn-default" href="tandaibarang/<?php echo $barangs->ID_BRG ?>">OK</a>
+        <a type="button" id="barangid" class="btn btn-default" href="">OK</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
       </div>
     </div>
@@ -367,6 +373,12 @@
 <script src="<?php echo base_url(); ?>assets/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="<?php echo base_url(); ?>assets/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="<?php echo base_url(); ?>assets/_include/js/main.js"></script> <!-- Default JS -->
+<script>
+$(document).on("click", "#tandai", function () {
+     var IdBrg = $(this).data('id');
+     $("#barangid").attr("href","tandaibarang/"+IdBrg );
+});     
+</script>
 <!-- End Js -->
 
 </body>

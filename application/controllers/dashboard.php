@@ -302,8 +302,10 @@ class dashboard extends CI_Controller {
         }
     }
 
-    public function tandaibarang() {
+    public function tandaibarang($id_barang) {
         $this->load->model('barangModel');
+        $this->barangModel->tandai_barang($id_barang);
+        $this->temuan();
     }
     
     public function logout(){

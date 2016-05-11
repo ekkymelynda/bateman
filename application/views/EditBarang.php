@@ -274,7 +274,7 @@ if(validation_errors()!=NULL){
             </div>
             <div class="span4">
                 <div class="fileinput fileinput-new text-center" data-provides="fileinput" datastyle="width: 100%;">
-                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 300px;"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'"/>' ?></div>
+                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 175px;"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'"/>' ?></div>
                          <div><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"><?php echo $barangs->NAMA_FOTO ?></span></div>
                             <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Change</span><input type="file" name="image" ></span>
                             <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
@@ -288,7 +288,7 @@ if(validation_errors()!=NULL){
             <div>
                 <button type="submit" class="btn btn-default" form="barangForm" value="submitForm">OK</button>
                 <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
-                <button type="button" class="btn btn-default">Cancel</button>            
+                <button type="button" class="btn btn-default">Batal</button>            
             </div>
                 
         </div>

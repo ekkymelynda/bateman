@@ -463,7 +463,7 @@ if(validation_errors()!=NULL){
       <div class="modal-footer">
         <button id="muridForm" type="submit" class="btn btn-default" form="loginuser" value="submitForm">OK</button>
         <!--<button type="submit" class="btn btn-default" form="loginuser" value="submitForm">OK</button>-->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
       </div>
     </div>
 
@@ -523,7 +523,7 @@ if(validation_errors()!=NULL){
             <div class="modal-footer">
                 <button type="submit" class="btn btn-default" form="registerForm" value="submitForm">OK</button>
                 <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
             </div>
         </div>
 

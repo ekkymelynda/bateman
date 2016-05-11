@@ -241,7 +241,7 @@ if(validation_errors()!=NULL){
             <div>
                 <button type="submit" class="btn btn-default" form="barangForm" value="submitForm">OK</button>
                 <!--<button type="button" class="btn btn-default" data-dismiss="modal">OK</button>-->
-                <button type="button" class="btn btn-default">Cancel</button>            
+                <button type="button" class="btn btn-default">Batal</button>            
             </div>
                 
         </div>

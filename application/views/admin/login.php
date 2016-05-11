@@ -65,6 +65,16 @@
         <h2 class="brand-text">Bateman</h2>
       </div>
       <p>Masuk ke halaman akun Anda</p>
+      <?php
+      if(isset($_GET['error']) && $_GET['error']=='gagal')
+      {
+      ?>
+      <div class="alert alert-danger" role="alert">
+        <p class="alert-link">Email atau Password salah</p>
+      </div>
+      <?php
+      }
+      ?>
       <form method="post" action="<?php echo base_url(); ?>admin/checkLoginAdmin">
         <div class="form-group">
           <label class="sr-only" for="inputName">Email</label>

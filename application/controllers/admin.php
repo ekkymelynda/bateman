@@ -31,6 +31,12 @@ class admin extends CI_Controller {
         $this->load->view('admin/login');
     }
 
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        $this->load->view('admin/login');
+    }
+
     public function checkLoginAdmin() 
     {
         //$this->load->helper('security');

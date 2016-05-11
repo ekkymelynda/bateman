@@ -1,3 +1,16 @@
+<?php
+    error_reporting(E_ALL & ~E_NOTICE);
+    if($_SESSION['username']){
+        /*echo $_SESSION['username'];
+        echo $_SESSION['userid'];
+        echo $_SESSION['name'];*/
+        $foto = $_SESSION['foto'];
+    }
+    else{
+        //header("Location:../dashboard/index");
+        header("Location:login");
+    }
+?>
 <!-- Header -->
 
 <!DOCTYPE html>

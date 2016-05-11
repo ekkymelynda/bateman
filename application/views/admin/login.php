@@ -66,7 +66,7 @@
       </div>
       <p>Masuk ke halaman akun Anda</p>
       <?php
-      if(isset($_GET['error']) && $_GET['error']=='gagal')
+      if(isset($_SESSION['error']))
       {
       ?>
       <div class="alert alert-danger" role="alert">

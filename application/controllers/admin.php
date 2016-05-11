@@ -33,7 +33,9 @@ class admin extends CI_Controller {
 
     public function logout()
     {
+        $this->load->library('session');
         $this->session->sess_destroy();
+        $this->session->unset_userdata('error');
         $this->load->view('admin/login');
     }
 
@@ -44,8 +46,11 @@ class admin extends CI_Controller {
         $this->form_validation->set_rules('pswd_adm','Password','trim|required|max_length[32]|callback_verifyAdmin');
         if($this->form_validation->run() == false)
         {
+            $this->load->library('session');
+            $this->session->set_userdata('error', 'gagal');
             //redirect('dashboard');
-            $this->login();
+            $this->load->view('admin/login');
+            #$this->login();
         }
         else{
             redirect('../admin/profil_lihat');

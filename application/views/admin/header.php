@@ -97,7 +97,7 @@
         <i class="icon wb-search" aria-hidden="true"></i>
       </button>
       <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="">
-        <span class="navbar-brand-text"> Bateman</span>
+        <span class="navbar-brand-text">BATEMAN</span>
       </div>
     </div>
 

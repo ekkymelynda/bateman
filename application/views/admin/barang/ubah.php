@@ -1,10 +1,10 @@
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Ubah Data Barang</h1>
+      <h1 class="page-title">Ubah Barang</h1>
       <ol class="breadcrumb">
-        <li>Barang</li>
-        <li>Ubah</li>
+        <li>Data Barang</li>
+        <li>Ubah Barang</li>
       </ol>
     </div>
     <div class="page-content">
@@ -26,7 +26,29 @@
                     <div class="form-group">
                       <label class="control-label"><b>Jenis</b></label>
                           <select class="form-control" name="id_jenis" required="off">
-                              <option value="<?php echo $row->ID_JENIS;?>"><?php echo $row->ID_JENIS;?></option>
+                              <option value="<?php echo $row->ID_JENIS;?>">
+							  <?php 
+								$category = $row->ID_JENIS;
+								switch($category){
+									case 1:
+										echo "Elektronik";
+										break;
+									case 2:
+										echo "Device";
+										break;
+									case 3:
+										echo "Alat Tulis";
+										break;
+									case 4:
+										echo "Aksesoris";
+										break;
+									case 5:
+										echo "Pakaian";
+										break;
+									case 6:
+										echo "Lain - lain";
+										break;
+								}?></option>
                               <option value="1">Elektronik</option>
                               <option value="2">Device</option>
                               <option value="3">Alat Tulis</option>

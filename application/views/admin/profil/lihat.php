@@ -50,7 +50,7 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['foto']).'" width="128px" hight="128px">'; ?>
+                      <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($_SESSION['adminfoto']).'" width="128px" hight="128px">'; ?>
                       <br>
                       <label></label>
                     </div>

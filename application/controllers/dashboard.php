@@ -11,9 +11,21 @@ class dashboard extends CI_Controller {
 
     public function index()
 	{
+        $this->load->library('pagination');
         $this->load->model('barangModel');
-        $this->data['barang'] = $this->barangModel->listBarang();
-		$this->load->view('index.php', $this->data);
+    
+        //$config['base_url'] = 'http://localhost/bateman/trunk/dashboard/index';
+        //$config['total_rows'] = $this->db->get('barang')->num_rows();
+        //$config['per_page'] = 1;
+        //$config['num_links'] = 20;
+        //$config['full_tag_open'] = '<div id="pagination">';
+        //$config['full_tag_close'] = '</div>';
+        
+        //$this->pagination->initialize($config);        
+        
+        //$this->data['barang'] = $this->barangModel->listBarang($config['per_page'], $this->uri->segment(3));
+		$this->data['barang'] = $this->barangModel->listBarang();
+        $this->load->view('index.php', $this->data);
     }
     
     public function photoprofil($id)

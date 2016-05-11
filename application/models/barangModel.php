@@ -35,6 +35,14 @@ class barangModel extends CI_Model {
         return $query->result();
     }
     
+/*    public function listBarang($limit, $offset = 0){
+        $this->db->select('*');
+        $this->db->from('barang');
+        $query=$this->db->get('',$limit, $offset);
+        
+        return $query->result();        
+    } */   
+    
     public function listBarangTemuan(){
         $id = $_SESSION['userid'];
         $query=$this->db->query("SELECT DISTINCT barang.*, pengguna.* FROM barang, pengguna WHERE barang.ID_PGN = '$id' AND pengguna.ID_PGN = '$id'");

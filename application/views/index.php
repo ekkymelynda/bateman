@@ -399,7 +399,6 @@ if(validation_errors()!=NULL){
                                             </li>                                     
                             <?php    } ?>
                 <?php         }  ?>
-
                         	<!-- End Item Project -->
                         </ul>
                     </section>
@@ -409,6 +408,7 @@ if(validation_errors()!=NULL){
         </div>
         <!-- End Portfolio Projects -->
     </div>
+                    <?php /* echo $this->pagination->create_links(); */?>
 </div>
 <!-- End Our Work Section -->
 

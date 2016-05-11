@@ -1446,3 +1446,22 @@ footer .credits {
 .altuser:hover {
     color: #FFEB21;
 }
+
+#pagination{
+    margin: 0 auto;
+    display: table;
+}
+
+#pagination a, #pagination strong {
+	background: #e3e3e3;
+	padding: 4px 7px;
+	text-decoration: none;
+	border: 1px solid #cac9c9;
+	color: #292929;
+	font-size: 13px;
+}
+
+#pagination strong, #pagination a:hover {
+	font-weight: normal;
+	background: #cac9c9;
+}

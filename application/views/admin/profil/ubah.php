@@ -16,7 +16,7 @@
               <div class="example-wrap">
                 <h4 class="example-title">Ubah Data Profil</h4>
                 <div class="example">
-                  <form class="form-group" name="adminForm" id="exampleStandardForm" enctype="multipart/form-data" action="<?php echo base_url();?>admin/updateAdmin" method="post">
+                  <form class="form-group" name="adminForm" id="exampleStandardForm3" enctype="multipart/form-data" action="<?php echo base_url();?>admin/updateAdmin" method="post">
                     </div>
                       <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>

@@ -83,7 +83,7 @@ class admin extends CI_Controller {
             $this->profil_ubah();
         }
         else {
-            $userid = $this->session->userdata('userid');
+            $userid = $this->session->userdata('adminid');
             $nama_adm = $this->input->post('nama_adm');
             $email_adm = $this->input->post('email_adm');
             $pswd_adm = $this->input->post('pswd_adm');
@@ -245,15 +245,33 @@ class admin extends CI_Controller {
     public function ubahBarang($id_brg)
     {
         $nama_brg= $this->input->post('nama_brg');
-        $jenis_brg= $this->input->post('jenis_brg');
+        $id_jenis= $this->input->post('id_jenis');
         $tglpost_brg= $this->input->post('tglpost_brg');
         $lokasi_brg= $this->input->post('lokasi_brg');
         $deskripsi_brg= $this->input->post('deskripsi_brg');
         $status_brg= $this->input->post('status_brg');
-        $foto_brg= $this->input->post('foto_brg');
-        $nama_foto= $this->input->post('nama_foto');
 
-        $this->adminModel->ubah_barang($id_brg, $nama_brg, $jenis_brg, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto);
+        $this->adminModel->ubah_barang($id_brg, $nama_brg, $id_jenis, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg);
+        if(!empty($_FILES['image']['tmp_name']))
+           {
+            $file = $_FILES['image']['tmp_name'];
+            if(!isset($file)){
+                echo "Please select an image.";
+            }
+            else{
+                $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+                $image_name = addslashes($_FILES['image']['name']);
+                $image_size = getimagesize($_FILES['image']['tmp_name']);
+                //$this->load->model('barangModel');
+                $this->adminModel->ubah_foto_barang($id_brg, $image, $image_name);
+            /*        $newdata = array(
+                        'name'  => $nama,
+                    );
+                    $this->session->set_userdata($newdata);    */                
+                     
+                
+                }            
+            }
 
         redirect(base_url()."admin/lihatBarang");
     }

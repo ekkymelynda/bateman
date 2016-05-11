@@ -17,7 +17,7 @@
                 <h4 class="example-title">Ubah Data Barang</h4>
                 <div class="example">
                   <?php foreach ($h->result() as $row){?>
-                  <form class="form-horizontal" id="exampleStandardForm2" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
+                  <form class="form-horizontal" id="exampleStandardForm2" enctype="multipart/form-data" autocomplete="on" action="<?php echo base_url();?>admin/ubahBarang/<?php echo $row->ID_BRG;?>" method="post">
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>
                         <input type="text" class="form-control" id="inputBasicFirstName" name="nama_brg"
@@ -85,7 +85,7 @@
                       <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                         <div class="fileinput" data-trigger="fileinput" ></div>
                           <div>
-                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Ubah</span><input type="file" name="foto_brg"></span>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
                             <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
                           </div>
                       </div>

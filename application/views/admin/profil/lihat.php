@@ -20,7 +20,7 @@
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>ID</b></label>
                         <br>
-                        <label><?php echo $_SESSION['userid']; ?></label>
+                        <label><?php echo $_SESSION['adminid']; ?></label>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="inputBasicFirstName"><b>Nama</b></label>

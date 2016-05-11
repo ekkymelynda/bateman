@@ -56,7 +56,7 @@ class adminModel extends CI_Model {
 
             $newdata = array(
             'username'  => $username,
-            'userid' => $idid[0]->ID_ADM,
+            'adminid' => $idid[0]->ID_ADM,
             'name' => $idid[0]->NAMA_ADM,
             'email' => $idid[0]->EMAIL_ADM,
             'pass' => $idid[0]->PSWD_ADM,
@@ -83,7 +83,12 @@ class adminModel extends CI_Model {
     }
 
 
-    public function ubah_barang($id_brg, $nama_brg, $id_jenis, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg, $foto_brg, $nama_foto)
+    public function ubah_foto_barang($id_brg, $image, $image_name){
+
+        $this->db->query("UPDATE barang SET FOTO_BRG = '$image', NAMA_FOTO = '$image_name' WHERE ID_BRG='$id_brg'");
+    }
+
+    public function ubah_barang($id_brg, $nama_brg, $id_jenis, $tglpost_brg, $lokasi_brg, $deskripsi_brg, $status_brg)
     {
         $data = array(
             'nama_brg' => $nama_brg,
@@ -92,8 +97,6 @@ class adminModel extends CI_Model {
             'lokasi_brg' => $lokasi_brg,
             'deskripsi_brg' => $deskripsi_brg,
             'status_brg' => $status_brg,
-            'foto_brg' => $foto_brg,
-            'nama_foto' => $nama_foto
             );
 
         $this->db->where("id_brg", $id_brg);

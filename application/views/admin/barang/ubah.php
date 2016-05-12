@@ -27,32 +27,12 @@
                       <label class="control-label"><b>Jenis</b></label>
                           <select class="form-control" name="id_jenis" required="off">
                               <option value="<?php echo $row->ID_JENIS;?>">
-							  <?php 
-								$category = $row->ID_JENIS;
-								switch($category){
-									case 1:
-										echo "Elektronik";
-										break;
-									case 2:
-										echo "Device";
-										break;
-									case 3:
-										echo "Alat Tulis";
-										break;
-									case 4:
-										echo "Aksesoris";
-										break;
-									case 5:
-										echo "Pakaian";
-										break;
-									case 6:
-										echo "Lain - lain";
-										break;
-								}?></option>
-                              <option value="1">Elektronik</option>
-                              <option value="2">Device</option>
-                              <option value="3">Alat Tulis</option>
-                              <option value="4">Aksesoris</option>
+                                <?php echo $row->JENIS_BARANG;?>
+                              </option>
+                              <option value="1">Aksesoris</option>
+                              <option value="2">Alat Tulis</option>
+                              <option value="3">Device</option>
+                              <option value="4">Elektronik</option>
                               <option value="5">Pakaian</option>
                               <option value="6">Lain - lain</option>
                           </select>

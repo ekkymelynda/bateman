@@ -11,7 +11,7 @@ class dashboard extends CI_Controller {
 
     public function index()
 	{
-        $this->load->library('pagination');
+        //$this->load->library('pagination');
         $this->load->model('barangModel');
     
         //$config['base_url'] = 'http://localhost/bateman/trunk/dashboard/index';

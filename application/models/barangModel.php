@@ -35,13 +35,14 @@ class barangModel extends CI_Model {
         return $query->result();
     }
     
-/*    public function listBarang($limit, $offset = 0){
-        $this->db->select('*');
-        $this->db->from('barang');
+    /*public function listBarang($limit, $offset = 0){
+        $this->db->select('barang.*, pengguna.*');
+        $this->db->from('barang, pengguna');
+        $this->db->where('barang.ID_PGN','pengguna.ID_PGN');
         $query=$this->db->get('',$limit, $offset);
         
         return $query->result();        
-    } */   
+    }   */ 
     
     public function listBarangTemuan(){
         $id = $_SESSION['userid'];

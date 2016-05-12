@@ -60,7 +60,13 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto</b></label>
                       <br>
-                      <?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_BRG).'"/></a>';}?></td>
+                  <?php if($row->FOTO_BRG != NULL) {?>
+                    <?php echo '<a href="#"><img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_BRG).'"/></a>';?>
+                <?php  } ?>
+                  <?php if($row->FOTO_BRG == NULL) {?>
+                    <?php echo '<a href="#"><img width="128px" height="128px" src="'.base_url().'/assets/images/box.png"/></a>';?></td>  
+                 <?php } ?>
+            <?php } ?>          
                       <label></label>
                       <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                         <div class="fileinput" data-trigger="fileinput" ></div>

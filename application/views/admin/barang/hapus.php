@@ -60,8 +60,13 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Foto Barang</b></label>
                       <br>
-                      <img src="<?php echo $row->FOTO_BRG;?>" width="128px" hight="128px">
-                      <br>
+                  <?php if($row->FOTO_BRG != NULL) {?>
+                    <?php echo '<img width="128px" height="128px" src="data:image/jpeg;base64,'.base64_encode( $row->FOTO_BRG).'"/>';?>
+                  <?php  } ?>
+                  <?php if($row->FOTO_BRG == NULL) {?>
+                    <?php echo '<img width="128px" height="128px" src="'.base_url().'/assets/images/box.png"/></a>';?>              
+                  <?php  } ?>
+                        <br>
                       <label><?php echo $row->NAMA_FOTO;?></label>
                     </div>
                     <div class="form-group">

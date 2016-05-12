@@ -594,8 +594,8 @@ if(validation_errors()!=NULL){
                             <div class="fileinput fileinput-new text-center" data-provides="fileinput" style="float: right; width: 40%;">
                               <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 175px; height: 200px;"></div>
                               <div>
-                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select Profile Picture</span><span class="fileinput-exists">Change</span><input type="file" name="image"></span>
-                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Pilih Foto Profil</span><span class="fileinput-exists">Ubah</span><input type="file" name="image"></span>
+                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
                               </div>
                             </div>
                             <div style="float: left; width: 55%;">

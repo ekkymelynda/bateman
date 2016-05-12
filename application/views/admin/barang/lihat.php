@@ -36,7 +36,7 @@
               <tr>
                  <td><?php echo $row->ID_PGN;?></td>
                  <td><?php echo $row->NAMA_BRG;?></td>
-                 <td><?php echo $row->ID_JENIS;?></td>
+                 <td><?php echo $row->JENIS_BARANG;?></td>
                  <td><?php echo $row->TGLPOST_BRG;?></td>
                  <td><?php echo $row->LOKASI_BRG;?></td>
                  <td><?php echo $row->DESKRIPSI_BRG;?></td>

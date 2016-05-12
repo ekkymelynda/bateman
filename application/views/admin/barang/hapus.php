@@ -35,7 +35,7 @@
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Jenis</b></label>
                       <br>
-                      <label><?php echo $row->JENIS_BRG;?></label>
+                      <label><?php echo $row->JENIS_BARANG;?></label>
                     </div>
                     <div class="form-group">
                       <label class="control-label" for="inputBasicPassword"><b>Tanggal</b></label>
@@ -75,7 +75,7 @@
                         </form>
                       </div>
                       <div class="col-sm-2">
-                        <form method="get" action="<?php echo base_url(); ?>admin/barang_lihat">
+                        <form method="post" action="<?php echo base_url(); ?>admin/lihatBarang">
                           <button type="submit" class="btn btn-success">Tidak</button>
                          </form>
                       </div>

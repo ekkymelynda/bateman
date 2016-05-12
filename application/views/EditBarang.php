@@ -276,8 +276,8 @@ if(validation_errors()!=NULL){
                 <div class="fileinput fileinput-new text-center" data-provides="fileinput" datastyle="width: 100%;">
                     <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 262.5px; height: 175px;"><?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $barangs->FOTO_BRG).'"/>' ?></div>
                          <div><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"><?php echo $barangs->NAMA_FOTO ?></span></div>
-                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Change</span><input type="file" name="image" ></span>
-                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Foto Barang</span><span class="fileinput-exists">Ubah</span><input type="file" name="image" ></span>
+                            <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Hapus</a>
                         </div>
                     </div>
             </div>

@@ -199,7 +199,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -215,7 +215,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
@@ -243,7 +243,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -259,7 +259,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
@@ -276,7 +276,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -292,7 +292,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
@@ -309,7 +309,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -325,7 +325,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
@@ -342,7 +342,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -358,7 +358,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>
@@ -375,7 +375,7 @@
                                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="data:image/jpeg;base64,<?php echo base64_encode( $barangs->FOTO_BRG) ?>">
                                                 <?php } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/box123.jpg">
+                                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" data-fancybox-type="image" title="<?php echo $barangs->NAMA_BRG ?>" href="<?php echo base_url()?>assets/images/no-image.png">
                                                 <?php } ?>                                                
                                                         <span class="overlay-img"></span>
                                                         <!--<span class="overlay-img-thumb font-icon-plus"></span>-->
@@ -391,7 +391,7 @@
                                                               Kontak <?php echo $barangs->NOTLP_PGN ?><br>">
                                                 <?php    } ?>
                                                 <?php if($barangs->FOTO_BRG == NULL) { ?>
-                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/box123.jpg" margin-right: 12px;
+                                                    <img style="width: 100%; height: 220px;" src="<?php echo base_url()?>assets/images/no-image.png" margin-right: 12px;
                                                          alt="Lokasi ditemukan di <?php echo $barangs->LOKASI_BRG ?><br>
                                                               Tanggal ditemukan <?php echo $barangs->TGLPOST_BRG ?><br>
                                                               Pada <?php echo $barangs->WAKTUPOST_BRG ?> WIB<br>

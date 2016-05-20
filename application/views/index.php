@@ -138,6 +138,7 @@ if(validation_errors()!=NULL){
             	<!--<li class="current"><a href="#home-slider">Home</a></li>-->
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="<?php echo base_url();?>dashboard/help">Bantuan</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#login" >Masuk</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#register">Daftar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->

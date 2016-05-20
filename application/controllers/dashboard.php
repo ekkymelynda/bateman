@@ -32,6 +32,11 @@ class dashboard extends CI_Controller {
 	{
         $this->load->model('barangModel');
 		$this->load->view('profilepicture.php', $id);
+    }
+
+    public function help()
+    {
+        $this->load->view('help.php');
     }    
 
     public function masukadmin()

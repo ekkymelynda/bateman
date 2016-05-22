@@ -138,7 +138,6 @@ if(validation_errors()!=NULL){
             	<!--<li class="current"><a href="#home-slider">Home</a></li>-->
                 <li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="<?php echo base_url();?>dashboard/help">Bantuan</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#login" >Masuk</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#register">Daftar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
@@ -437,8 +436,8 @@ if(validation_errors()!=NULL){
             	
             <div class="social">
             	<ul style="text-align:center" class="social-icons">
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/muhammaddivi.n" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/divijaya" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -460,8 +459,8 @@ if(validation_errors()!=NULL){
             	
             <div class="social">
             	<ul style="text-align:center" class="social-icons">
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/Putro.satrio.wibowo" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="<?php echo base_url();?>" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -482,8 +481,8 @@ if(validation_errors()!=NULL){
             	
             <div class="social">
             	<ul style="text-align:center" class="social-icons">
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/ekkymelynda.ekky" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/EkkyMelynda" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -504,8 +503,8 @@ if(validation_errors()!=NULL){
             	
             <div class="social">
             	<ul style="text-align:center" class="social-icons">
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
-                    <li><a href="#" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/ken.genesius" style="color: #2F3238;"><i class="font-icon-social-facebook"></i></a></li>
+                    <li><a href="<?php echo base_url();?>" style="color: #2F3238;"><i class="font-icon-social-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -520,7 +519,7 @@ if(validation_errors()!=NULL){
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Kelompok 8 IMK C - BATEMAN</span></a></p>
+	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Kelompok 8 IMK C - BATEMAN</span></a>. <a style="color: #FFEB21;" href="<?php echo base_url();?>dashboard/help">Bantuan</a></p>
 </footer>
 <!-- End Footer -->
 

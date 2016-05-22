@@ -107,7 +107,7 @@ if(validation_errors()!=NULL){
 <!-- End of Splash Screen -->
 
 <!-- Homepage Slider -->
-<div id="home-slider" style="height: 92%">	
+<!-- <div id="home-slider" style="height: 92%">	
     <div class="overlay"></div>
 
     <div class="slider-text">
@@ -121,12 +121,12 @@ if(validation_errors()!=NULL){
         
         <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
     </div>
-</div>
+</div>-->
 <!-- End Homepage Slider -->  
     
 <!-- Header -->
 <header>
-    <div class="sticky-nav">
+    <!--<div class="sticky-nav">
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
@@ -136,17 +136,16 @@ if(validation_errors()!=NULL){
         <nav id="menu">
         	<ul id="menu-nav">
             	<!--<li class="current"><a href="#home-slider">Home</a></li>-->
-                <li><a href="#work">Bateman</a></li>
+                <!--<li><a href="#work">Bateman</a></li>
                 <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="<?php echo base_url();?>dashboard/help">Bantuan</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#login" >Masuk</a></li>
                 <li><a href="#filter" data-toggle="modal" data-target="#register">Daftar</a></li>
 				<!--<li><a href="shortcodes.html" class="external">Register</a></li> -->
-            </ul>
+            <!--</ul>
         </nav>
         
     </div>
-</header>   
+</header>   -->
 <!-- End Header -->
 
 <!-- Our Work Section -->
@@ -165,14 +164,138 @@ if(validation_errors()!=NULL){
         <!-- Portfolio Projects -->
         <div class="row">
         	
-            	<h4>Cara Mendaftar Akun Pengguna</h4>
-              <p>Pada halama utama bateman klik menu Daftar
-Setelah muncul form daftar
-Isi form daftar sesuai data Anda
-Pilih Ok untuk membuat akun baru
-Untuk membatalkan daftar pengguna pilih Batal</p>
-              <br>
-              <h4></h4>
+            	<p><strong><b>Cara Mendaftar Akun Pengguna</b></strong></p>
+
+<ol>
+    <li>
+    <p><strong>Pada halama utama bateman klik menu Daftar</strong></p>
+    </li>
+    <li>
+    <p><strong>Setelah muncul form daftar</strong></p>
+    </li>
+    <li>
+    <p><strong>Isi form daftar sesuai data Anda</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih Ok untuk membuat akun baru</strong></p>
+    </li>
+    <li>
+    <p><strong>Untuk membatalkan daftar pengguna pilih Batal</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Cara Masuk sebagai Pengguna</strong></b></p>
+
+<ol>
+    <li>
+    <p><strong>Pada halaman utama bateman klik menu Masuk</strong></p>
+    </li>
+    <li>
+    <p><strong>Setelah muncul form masuk</strong></p>
+    </li>
+    <li>
+    <p><strong>Isi form bedasarkan data email dan password Anda yang telah terdaftar</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih Ok untuk masuk ke halaman pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Untuk membatalkan masuk sebagai pengguna pilih Batal</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Cara Melihat dan Mengubah Profil Pengguna</b></strong></p>
+
+<ol>
+    <li>
+    <p><strong>Masuk sebagai pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih menu Profil di halaman pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Ubah data yang tersedia di halaman profil sesuai keinginan Anda</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih Ok untuk menyimpan hasil perubahan</strong></p>
+    </li>
+    <li>
+    <p><strong>Untuk membatalkan ubah pengguna pilih Batal</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Cara Melihat Semua Barang Temuan sebagai Pengguna</b></strong></p>
+
+<ol>
+    <li>
+    <p><strong>Masuk sebagai pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih menu Beranda di halaman pengguna</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Cara Melihat Semua Barang Temuan Miliknya sebagai Pengguna</b></strong></p>
+
+<ol>
+    <li>
+    <p><strong>Masuk sebagai pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih menu Temuan Anda di halaman pengguna</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Cara Membuat Post Temuan Barang</b></strong></p>
+
+<ol>
+    <li>
+    <p><strong>Masuk sebagai pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih menu Tambah Temuan di halaman pengguna</strong></p>
+    </li>
+    <li>
+    <p><strong>Isi form tambah temuan sesuai yang barang yang Anda temukan</strong></p>
+    </li>
+    <li>
+    <p><strong>Pilih Ok untuk menambahkan</strong></p>
+    </li>
+    <li>
+    <p><strong>Untuk membatalkanya pilih Batal</strong></p>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Kontak</b></strong></p>
+
+<p><strong>Email : <a href="mailto:bateman@gmail.com">bateman@gmail.com</a></strong></p>
+
+<p><strong>Telp : 081234567890</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong><b>Alamat</b></strong></p>
+
+<p><strong>Gedung Teknik Informatika Lantai 1 Ruang 103</strong></p>
+
+<p><strong>Institut Teknologi Sepuluh Nopember Surabaya</strong></p>
+
+<p><strong>Indonesia</strong></p>
+
+<p>&nbsp;</p>
+
 
         </div>
   </div>
@@ -181,7 +304,7 @@ Untuk membatalkan daftar pengguna pilih Batal</p>
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Kelompok 8 IMK C - BATEMAN</span></a></p>
+	<p class="credits">&copy;IMK 2016. <span style="color: #FFEB21;">Barang Temuan Teknik Informatika ITS</span> oleh <a href="<?php echo base_url(); ?>dashboard/masukadmin"><span style="color: #FFEB21;">Kelompok 8 IMK C - BATEMAN</span></a>. <a style="color: #FFEB21;" href="<?php echo base_url();?>">Halaman Utama</a></p>
 </footer>
 <!-- End Footer -->
 
